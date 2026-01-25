@@ -4,14 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Untree.co" />
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-
-    <meta name="description" content="Find Apartments and Land for Sale in Kenya" />
-    <meta name="keywords" content="apartments, land for sale, real estate kenya" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +18,7 @@
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Brightwoods - Apartments & Land for Sale</title>
+    <title>Property — Real Estate Listings</title>
   </head>
   <body>
     <div class="site-mobile-menu site-navbar-target">
@@ -39,21 +34,20 @@
       <div class="container">
         <div class="menu-bg-wrap">
           <div class="site-navigation">
-            <a href="index.html" class="logo m-0 float-start">Brightwoods Realty</a>
-
+            <a href="index.html" class="logo m-0 float-start">Property</a>
             <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li class="has-children">
+              <li><a href="index.html">Home</a></li>
+              <li class="has-children active">
                 <a href="properties.html">Properties</a>
                 <ul class="dropdown">
-                  <li><a href="#">Apartments for Sale</a></li>
-                  <li><a href="#">Land for Sale</a></li>
+                  <li><a href="#">Buy Property</a></li>
+                  <li><a href="#">Sell Property</a></li>
                 </ul>
               </li>
+              <li><a href="services.html">Services</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
-
             <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
               <span></span>
             </a>
@@ -62,21 +56,17 @@
       </div>
     </nav>
 
-    <div class="hero">
-      <div class="hero-slide">
-        <div class="img overlay" style="background-image: url('images/hero_bg_3.jpg')"></div>
-        <div class="img overlay" style="background-image: url('images/hero_bg_2.jpg')"></div>
-        <div class="img overlay" style="background-image: url('images/hero_bg_1.jpg')"></div>
-      </div>
-
+    <div class="hero page-inner overlay" style="background-image: url('images/hero_bg_1.jpg')">
       <div class="container">
         <div class="row justify-content-center align-items-center">
-          <div class="col-lg-9 text-center">
-            <h1 class="heading" data-aos="fade-up">Find Your Perfect Apartment or Land</h1>
-            <form action="#" class="narrow-w form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-              <input type="text" class="form-control px-4" placeholder="City or Region (e.g. Nairobi, Nyali, Karen)" />
-              <button type="submit" class="btn btn-primary">Search</button>
-            </form>
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">Available Properties</h1>
+            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+              <ol class="breadcrumb text-center justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active text-white-50" aria-current="page">Properties</li>
+              </ol>
+            </nav>
           </div>
         </div>
       </div>
@@ -85,64 +75,65 @@
     <div class="section">
       <div class="container">
         <div class="row mb-5 align-items-center">
-          <div class="col-lg-6">
-            <h2 class="font-weight-bold text-primary heading">Featured Listings</h2>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <p><a href="#" class="btn btn-primary text-white py-3 px-4">View All Listings</a></p>
+          <div class="col-lg-6 text-center mx-auto">
+            <h2 class="font-weight-bold text-primary heading">Featured Apartments</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
             <div class="property-slider-wrap">
               <div class="property-slider">
-
+                
                 <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                  </a>
+                  <a href="#" class="img"><img src="images/image_3.jpg" alt="Greatwall" class="img-fluid" /></a>
                   <div class="property-content">
-                    <div class="price mb-2"><span>KSh 15,000,000</span></div>
+                    <div class="price mb-2"><span>Commercial & Residential</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50">Luxury Apartment</span>
-                      <span class="city d-block mb-3">Kilimani, Nairobi</span>
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">3 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-                      <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                      <span class="d-block mb-2 text-black-50">Greatwall Apartments & Shops</span>
+                      <span class="city d-block mb-3">9 Units (3BR) + Penthouse + 10 Shops</span>
+                      <a href="#" class="btn btn-primary py-2 px-3 btn-property-detail" 
+                         data-title="Greatwall Apartments & Shops" 
+                         data-price="Commercial & Residential" 
+                         data-img="images/image_3.jpg" 
+                         data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.673847958197!2d36.936528!3d-1.372277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f7142bc7095cd%3A0xd10121b8382d490d!2sGreat%20Wall%20Apartments%20Phase%20III!5e0!3m2!1sen!2ske!4v1700000000000">See details</a>
                     </div>
                   </div>
                 </div>
 
                 <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
-                  </a>
+                  <a href="#" class="img"><img src="images/image_4.jpg" alt="Tena Estate" class="img-fluid" /></a>
                   <div class="property-content">
-                    <div class="price mb-2"><span>KSh 4,500,000</span></div>
+                    <div class="price mb-2"><span>KSh 22,000,000</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50">0.5 Acre Land</span>
-                      <span class="city d-block mb-3">Nanyuki, Laikipia</span>
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-map me-2"></span>
-                          <span class="caption">Residential Plot</span>
-                        </span>
-                      </div>
-                      <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                      <span class="d-block mb-2 text-black-50">Manyanja Rd</span>
+                      <span class="city d-block mb-3">Tena Estate</span>
+                      <a href="#" class="btn btn-primary py-2 px-3 btn-property-detail" 
+                         data-title="Tena Estate Villa" 
+                         data-price="KSh 22,000,000" 
+                         data-img="images/image_4.jpg" 
+                         data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.847551066794!2d36.8967!3d-1.2882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1b9428ad6b69%3A0xe23467f76b466490!2sTena%20Estate%20S%204!5e0!3m2!1sen!2ske!4v1700000000000">See details</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="property-item">
+                  <a href="#" class="img"><img src="images/image_5.jpg" alt="Tasia 1" class="img-fluid" /></a>
+                  <div class="property-content">
+                    <div class="price mb-2"><span>KSh 75,000,000</span></div>
+                    <div>
+                      <span class="d-block mb-2 text-black-50">Outering Rd, Fedha</span>
+                      <span class="city d-block mb-3">Tasia 1 (1/4 Acre)</span>
+                      <a href="#" class="btn btn-primary py-2 px-3 btn-property-detail" 
+                         data-title="Tasia 1 (1/4 Acre)" 
+                         data-price="KSh 75,000,000" 
+                         data-img="images/image_5.jpg" 
+                         data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.835!2d36.90!3d-1.30!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1222!2sFedha%20Estate!5e0!3m2!1sen!2ske!4v1700000000000">See details</a>
                     </div>
                   </div>
                 </div>
 
               </div>
-              <div id="property-nav" class="controls">
+              <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
                 <span class="prev" data-controls="prev">Prev</span>
                 <span class="next" data-controls="next">Next</span>
               </div>
@@ -152,86 +143,118 @@
       </div>
     </div>
 
-    <section class="features-1">
+    <div class="section section-properties">
       <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h2 class="font-weight-bold text-primary heading">Land & Residential Plots</h2>
+            </div>
+        </div>
         <div class="row">
-          <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              <span class="flaticon-building"></span>
-              <h3 class="mb-3">Modern Apartments</h3>
-              <p>Verified apartment listings from studios to luxury penthouses across major urban centers.</p>
+          
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="#" class="img"><img src="images/image_19.jpg" alt="Maanzoni" class="img-fluid" /></a>
+              <div class="property-content">
+                <div class="price mb-2"><span>Starting KSh 7.5M/Acre</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Maanzoni behind Looqman (2nd Row)</span>
+                  <span class="city d-block mb-3">5 Acres Land</span>
+                  <a href="#" class="btn btn-primary py-2 px-3 btn-property-detail" 
+                     data-title="5 Acres Land - Maanzoni" 
+                     data-price="Starting KSh 7.5M/Acre" 
+                     data-img="images/image_19.jpg" 
+                     data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5!2d37.1!3d-1.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f763!2sMaanzoni%20lodge%20ltd!5e0!3m2!1sen!2ske!4v1700000000000">Enquire</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="box-feature">
-              <span class="flaticon-house"></span>
-              <h3 class="mb-3">Prime Land</h3>
-              <p>A wide selection of agricultural, commercial, and residential plots with ready title deeds.</p>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item mb-30">
+              <a href="#" class="img"><img src="images/image_33.jpg" alt="Enkasiti" class="img-fluid" /></a>
+              <div class="property-content">
+                <div class="price mb-2"><span>KSh 4,000,000</span></div>
+                <div>
+                  <span class="d-block mb-2 text-black-50">Enkasiti 1</span>
+                  <span class="city d-block mb-3">1/4 Acre Residential Plot</span>
+                  <a href="#" class="btn btn-primary py-2 px-3 btn-property-detail" 
+                     data-title="1/4 Acre Plot - Enkasiti" 
+                     data-price="KSh 4,000,000" 
+                     data-img="images/image_33.jpg" 
+                     data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.3!2d36.9!3d-1.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f677!2sEnkasiti%20Plains%20Resort!5e0!3m2!1sen!2ske!4v1700000000000">Enquire</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="box-feature">
-              <span class="flaticon-house-3"></span>
-              <h3 class="mb-3">Consultancy</h3>
-              <p>Professional guidance on property valuation and legal documentation for your peace of mind.</p>
-            </div>
-          </div>
+
         </div>
       </div>
-    </section>
+    </div>
 
-    <div class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Contact</h3>
-              <address>Menelik Lane, Off Ngong Road, Nairobi</address>
-              <ul class="list-unstyled links">
-                <li><a href="tel://0722726651">0722 726 651</a></li>
-                <li><a href="mailto:info@brightwoodapartments.com">info@brightwoodrealty.com</a></li>
-              </ul>
-            </div>
+    <div class="modal fade" id="propertyModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #00204a; color: white;">
+            <h5 class="modal-title" id="modal-title">Property Details</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Quick Links</h3>
-              <ul class="list-unstyled links">
-                <li><a href="#">Apartments for Sale</a></li>
-                <li><a href="#">Land for Sale</a></li>
-                <li><a href="about.html">About Us</a></li>
-              </ul>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="" id="modal-img" class="img-fluid rounded mb-3" style="width: 100%; height: 250px; object-fit: cover;">
+                <h4 id="modal-price" class="text-primary fw-bold"></h4>
+                <p id="modal-desc" class="text-muted"></p>
+              </div>
+              <div class="col-lg-6">
+                <div class="ratio ratio-16x9 mb-3" style="border: 1px solid #ddd;">
+                  <iframe id="modal-map" src="" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="d-grid">
+                  <a href="contact.html" class="btn btn-primary btn-lg">Contact Us to Enquire</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Social</h3>
-              <ul class="list-unstyled social">
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-12 text-center">
-            <p>Designed with love by Revos. Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="overlayer"></div>
-    <div class="loader">
-      <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
-    </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const detailButtons = document.querySelectorAll('.btn-property-detail');
+        const propertyModal = new bootstrap.Modal(document.getElementById('propertyModal'));
+
+        detailButtons.forEach(button => {
+          button.addEventListener('click', function(e) {
+            e.preventDefault(); 
+            
+            const title = this.getAttribute('data-title');
+            const price = this.getAttribute('data-price');
+            const img = this.getAttribute('data-img');
+            const mapUrl = this.getAttribute('data-map');
+            
+            const parent = this.closest('.property-content');
+            const locationText = parent.querySelector('.text-black-50').innerText;
+            const unitText = parent.querySelector('.city').innerText;
+
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-price').innerText = price;
+            document.getElementById('modal-img').src = img;
+            document.getElementById('modal-desc').innerText = locationText + " | " + unitText;
+            document.getElementById('modal-map').src = mapUrl;
+
+            propertyModal.show();
+          });
+        });
+      });
+    </script>
   </body>
 </html>
