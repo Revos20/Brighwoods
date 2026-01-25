@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brightwoods Apartments | Premium Real Estate</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Brightwoods Apartments | Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="logo">
-            <h1 class="brand-name">Brightwoods Apartments</h1>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
+    <header class="main-header">
+        <div class="logo"><h1>Brightwoods</h1></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="#">Properties <i class="fa fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
@@ -23,55 +22,29 @@
                         <li><a href="#">For Sale</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#">Property Type <i class="fa fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Apartments</a></li>
-                        <li><a href="#">Houses</a></li>
-                        <li><a href="#">Plots / Land</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
-        <div class="header-socials">
-            <i class="fa fa-search"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-        </div>
     </header>
 
-    <section class="hero">
-        <div class="slider">
-            <div class="slide active" style="background-image: url('apt1.jpg');"></div>
-            <div class="slide" style="background-image: url('apt2.jpg');"></div>
-            <div class="slide" style="background-image: url('apt3.jpg');"></div>
+    <section class="hero-section">
+        <div class="my-slider">
+            <div style="background-image:url('images/hero-bg-1.jpg'); height:80vh; background-size:cover;"></div>
+            <div style="background-image:url('img/slide2.jpg'); height:80vh; background-size:cover;"></div>
         </div>
-
-        <button class="slider-arrow left" onclick="changeSlide(-1)"><i class="fa fa-chevron-left"></i></button>
-        <button class="slider-arrow right" onclick="changeSlide(1)"><i class="fa fa-chevron-right"></i></button>
 
         <div class="property-info-card">
             <h2>Brightwoods Premium Residency</h2>
-            <p class="location">Off Kanjata Rd-Nairobi Kenya</p>
-            <div class="details">
-                <span>3 Br</span>
-                <span>2 Ba</span>
-                <span>1,940 SqFt</span>
-            </div>
-            <div class="card-footer">
-                <div class="tags">
-                    <span class="tag for-sale">FOR SALE</span>
-                    <span class="tag featured">FEATURED</span>
-                </div>
-                <div class="price">Price on call</div>
-            </div>
+            <p>Nairobi, Kenya</p>
+            <hr>
+            <p><strong>Price on call</strong></p>
+            <button class="btn btn-danger">View Details</button>
         </div>
     </section>
 
-    <section class="quick-search">
-        <div class="search-inner">
+    <section class="search-bar-red">
+        <div class="search-flex">
             <div class="field-group">
                 <label>KEYWORD</label>
                 <input type="text" placeholder="Enter Keyword...">
@@ -80,14 +53,20 @@
                 <label>STATUS</label>
                 <select><option>All Status</option></select>
             </div>
-            <div class="field-group">
-                <label>TYPE</label>
-                <select><option>All Types</option></select>
-            </div>
-            <button class="btn-search">Search</button>
+            <button class="btn-search-white">SEARCH</button>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script>
+        var slider = tns({
+            container: '.my-slider',
+            items: 1,
+            slideBy: 'page',
+            autoplay: true,
+            controls: true,
+            nav: false
+        });
+    </script>
 </body>
 </html>
