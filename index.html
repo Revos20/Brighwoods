@@ -1,237 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Untree.co" />
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lloyd Masika | Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
 
-    <meta name="description" content="Find Apartments and Land for Sale in Kenya" />
-    <meta name="keywords" content="apartments, land for sale, real estate kenya" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-    <link rel="stylesheet" href="fonts/icomoon/style.css" />
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
-    <link rel="stylesheet" href="css/tiny-slider.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
-
-    <title>Brightwoods - Apartments & Land for Sale</title>
-  </head>
-  <body>
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
+    <header class="header">
+        <div class="logo">
+            <img src="your-logo-here.png" alt="Lloyd Masika">
         </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-    <nav class="site-nav">
-      <div class="container">
-        <div class="menu-bg-wrap">
-          <div class="site-navigation">
-            <a href="index.html" class="logo m-0 float-start">Brightwoods Realty</a>
-
-            <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li class="has-children">
-                <a href="properties.html">Properties</a>
-                <ul class="dropdown">
-                  <li><a href="#">Apartments for Sale</a></li>
-                  <li><a href="#">Land for Sale</a></li>
-                </ul>
-              </li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Properties <i class="fa fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">For Rent</a></li>
+                        <li><a href="#">For Sale</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Property Type <i class="fa fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Apartments</a></li>
+                        <li><a href="#">Houses / Homes</a></li>
+                        <li><a href="#">Offices</a></li>
+                        <li><a href="#">Plots / Lands</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
-
-            <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
-              <span></span>
-            </a>
-          </div>
+        </nav>
+        <div class="header-socials">
+            <i class="fa fa-search"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram"></i>
         </div>
-      </div>
-    </nav>
+    </header>
 
-    <div class="hero">
-      <div class="hero-slide">
-        <div class="img overlay" style="background-image: url('images/hero_bg_3.jpg')"></div>
-        <div class="img overlay" style="background-image: url('images/hero_bg_2.jpg')"></div>
-        <div class="img overlay" style="background-image: url('images/hero_bg_1.jpg')"></div>
-      </div>
-
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-9 text-center">
-            <h1 class="heading" data-aos="fade-up">Find Your Perfect Apartment or Land</h1>
-            <form action="#" class="narrow-w form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-              <input type="text" class="form-control px-4" placeholder="City or Region (e.g. Nairobi, Nyali, Karen)" />
-              <button type="submit" class="btn btn-primary">Search</button>
-            </form>
-          </div>
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('apartment-bg.jpg');"></div>
         </div>
-      </div>
-    </div>
 
-    <div class="section">
-      <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-lg-6">
-            <h2 class="font-weight-bold text-primary heading">Featured Listings</h2>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <p><a href="#" class="btn btn-primary text-white py-3 px-4">View All Listings</a></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="property-slider-wrap">
-              <div class="property-slider">
+        <button class="slider-arrow left"><i class="fa fa-chevron-left"></i></button>
+        <button class="slider-arrow right"><i class="fa fa-chevron-right"></i></button>
 
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                  </a>
-                  <div class="property-content">
-                    <div class="price mb-2"><span>KSh 15,000,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50">Luxury Apartment</span>
-                      <span class="city d-block mb-3">Kilimani, Nairobi</span>
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">3 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-                      <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
-                    </div>
-                  </div>
+        <div class="property-info-card">
+            <h2>2 & 3 Muthangari Residency with DSQ for sale</h2>
+            <p class="location">Off Kanjata Rd-Nairobi Kenya</p>
+            <div class="details">
+                <span>3 Br</span>
+                <span>2 Ba</span>
+                <span>1,940 SqFt</span>
+            </div>
+            <div class="card-footer">
+                <div class="tags">
+                    <span class="tag for-sale">FOR SALE</span>
+                    <span class="tag featured">FEATURED</span>
                 </div>
-
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
-                  </a>
-                  <div class="property-content">
-                    <div class="price mb-2"><span>KSh 4,500,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50">0.5 Acre Land</span>
-                      <span class="city d-block mb-3">Nanyuki, Laikipia</span>
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-map me-2"></span>
-                          <span class="caption">Residential Plot</span>
-                        </span>
-                      </div>
-                      <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div id="property-nav" class="controls">
-                <span class="prev" data-controls="prev">Prev</span>
-                <span class="next" data-controls="next">Next</span>
-              </div>
+                <div class="price">Price on call</div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-
-    <section class="features-1">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              <span class="flaticon-building"></span>
-              <h3 class="mb-3">Modern Apartments</h3>
-              <p>Verified apartment listings from studios to luxury penthouses across major urban centers.</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="box-feature">
-              <span class="flaticon-house"></span>
-              <h3 class="mb-3">Prime Land</h3>
-              <p>A wide selection of agricultural, commercial, and residential plots with ready title deeds.</p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="box-feature">
-              <span class="flaticon-house-3"></span>
-              <h3 class="mb-3">Consultancy</h3>
-              <p>Professional guidance on property valuation and legal documentation for your peace of mind.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <div class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Contact</h3>
-              <address>Menelik Lane, Off Ngong Road, Nairobi</address>
-              <ul class="list-unstyled links">
-                <li><a href="tel://0722726651">0722 726 651</a></li>
-                <li><a href="mailto:info@brightwoodapartments.com">info@brightwoodrealty.com</a></li>
-              </ul>
+    <section class="quick-search">
+        <div class="search-inner">
+            <div class="field-group">
+                <label>KEYWORD</label>
+                <div class="input-with-icon">
+                    <input type="text" placeholder="Enter Keyword...">
+                    <i class="fa fa-search"></i>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Quick Links</h3>
-              <ul class="list-unstyled links">
-                <li><a href="#">Apartments for Sale</a></li>
-                <li><a href="#">Land for Sale</a></li>
-                <li><a href="about.html">About Us</a></li>
-              </ul>
+            <div class="field-group">
+                <label>STATUS</label>
+                <select><option>All Status</option></select>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Social</h3>
-              <ul class="list-unstyled social">
-                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li>
-              </ul>
+            <div class="field-group">
+                <label>TYPE</label>
+                <select><option>All Types</option></select>
             </div>
-          </div>
+            <div class="advanced-link">
+                <span>Advanced</span> <i class="fa fa-plus-circle"></i>
+            </div>
+            <button class="btn-search">Search</button>
         </div>
-        <div class="row mt-5">
-          <div class="col-12 text-center">
-            <p>Designed with love by Revos. Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <div id="overlayer"></div>
-    <div class="loader">
-      <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
-    </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/counter.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
+</body>
 </html>
