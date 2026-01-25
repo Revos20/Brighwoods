@@ -174,3 +174,17 @@ body {
     transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     will-change: transform, opacity;
 }
+/* Ensure the slider items actually have dimensions */
+.hero-item {
+    height: 75vh; /* This matches your .hero-section height */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block; /* Ensure it's treated as a block */
+}
+
+/* Optional: Fix for Tiny Slider initialization flicker */
+.tns-outer {
+    position: relative;
+}
