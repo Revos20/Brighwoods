@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brightwoods Apartments | Premium Real Estate</title>
+    
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,69 +13,219 @@
 <body>
 
     <header class="main-header">
-        <div class="logo"><h1 class="brand-name">Brightwoods</h1></div>
-        <nav>
+        <div class="logo">
+            <h1 class="brand-name">Brightwoods</h1>
+        </div>
+        <nav class="nav">
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li class="dropdown">
-                    <a href="properties.html">Properties <i class="fa fa-chevron-down"></i></a>
+                    <a href="#">Properties <i class="fa fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="properties.html">For Rent</a></li>
                         <li><a href="properties.html">For Sale</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#">Property Type <i class="fa fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Apartments</a></li>
+                        <li><a href="#">Houses</a></li>
+                        <li><a href="#">Plots / Lands</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact us</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
+        <div class="header-socials">
+            <i class="fa fa-search"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
     </header>
 
     <section class="hero-section">
         <div class="hero-slider">
             <div class="hero-item" style="background-image: url('img/hero1.jpg');"></div>
             <div class="hero-item" style="background-image: url('img/hero2.jpg');"></div>
+            <div class="hero-item" style="background-image: url('img/hero3.jpg');"></div>
         </div>
+
         <div class="property-info-card">
-            <span class="tag tag-red">FOR SALE</span>
-            <h2 class="mt-2">Muthangari Residency</h2>
-            <p class="text-muted">Off Kanjata Rd, Nairobi</p>
+            <h2 class="card-title">2 & 3 Muthangari Residency with DSQ for sale</h2>
+            <p class="card-location">Off Kanjata Rd-Nairobi Kenya</p>
             <div class="card-specs">
-                <span>3 Br</span><span>2 Ba</span><span>1,940 SqFt</span>
+                <span>3 Br</span> <span>2 Ba</span> <span>1,940 SqFt</span>
             </div>
-            <div class="d-flex justify-content-between align-items-center">
-                <span class="price-text">Price on call</span>
-                <button class="btn btn-sm btn-danger">View Details</button>
+            <div class="card-footer-flex">
+                <div class="card-tags">
+                    <span class="tag tag-red">FOR SALE</span>
+                    <span class="tag tag-orange">FEATURED</span>
+                </div>
+                <div class="card-price">Price on call</div>
             </div>
         </div>
     </section>
 
     <section class="search-bar-red">
-        <div class="container search-flex">
-            <div class="field-group"><label>KEYWORD</label><input type="text" placeholder="Enter Keyword..."></div>
-            <div class="field-group"><label>STATUS</label><select><option>All Status</option></select></div>
-            <div class="field-group"><label>TYPE</label><select><option>All Types</option></select></div>
-            <button class="btn-search-main">SEARCH</button>
+        <div class="container">
+            <div class="search-flex">
+                <div class="field-group">
+                    <label>KEYWORD</label>
+                    <div class="input-icon-wrap">
+                        <input type="text" placeholder="Enter Keyword...">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <label>STATUS</label>
+                    <select><option>All Status</option></select>
+                </div>
+                <div class="field-group">
+                    <label>TYPE</label>
+                    <select><option>All Types</option></select>
+                </div>
+                <div class="advanced-toggle">
+                    <span>Advanced</span> <i class="fa fa-plus-circle"></i>
+                </div>
+                <button class="btn-search-main">Search</button>
+            </div>
         </div>
     </section>
 
-    <section class="lifestyle-grid">
-        <div class="lifestyle-card active">
-            <div class="lifestyle-icon"><img src="img/icon-apt.png"></div>
-            <h5>Apartment</h5><p>6 Properties</p>
-        </div>
-        <div class="lifestyle-card">
-            <div class="lifestyle-icon"><img src="img/icon-house.png"></div>
-            <h5>House</h5><p>4 Properties</p>
-        </div>
-        <div class="lifestyle-card">
-            <div class="lifestyle-icon"><img src="img/icon-land.png"></div>
-            <h5>Plots</h5><p>12 Properties</p>
+    <section class="welcome-section py-5 text-center">
+        <div class="container">
+            <h2>Welcome to Brightwoods</h2>
+            <p class="text-muted">Whether you’re buying, selling or renting, we can help you move forward.</p>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="action-card">
+                        <img src="img/buy-home.png" alt="Buy">
+                        <h5>Buy a new home</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="action-card">
+                        <img src="img/sell-home.png" alt="Sell">
+                        <h5>Sell a home</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="action-card">
+                        <img src="img/rent-home.png" alt="Rent">
+                        <h5>Rent a home</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="explore-lifestyles">
+        <div class="lifestyle-grid">
+            <div class="lifestyle-card active">
+                <div class="lifestyle-icon"><img src="img/icon-apt.png"></div>
+                <h5>Apartment</h5><p>6 Properties</p>
+            </div>
+            <div class="lifestyle-card">
+                <div class="lifestyle-icon"><img src="img/icon-house.png"></div>
+                <h5>House</h5><p>4 Properties</p>
+            </div>
+            <div class="lifestyle-card">
+                <div class="lifestyle-icon"><img src="img/icon-luxury.png"></div>
+                <h5>Luxury Homes</h5><p>1 Property</p>
+            </div>
+            <div class="lifestyle-card">
+                <div class="lifestyle-icon"><img src="img/icon-villas.png"></div>
+                <h5>Villas</h5><p>2 Properties</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="mb-4">Our Featured Properties</h3>
+            <div class="featured-carousel">
+                <div class="item">
+                    <div class="property-card">
+                        <div class="img-wrapper" style="background-image: url('img/prop1.jpg');">
+                            <span class="badge badge-red">FOR SALE</span>
+                        </div>
+                        <div class="card-body-custom">
+                            <h6>Harambee Sacco Plot</h6>
+                            <p class="price-text">Price on call</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-5">Why Do People Love Working With Us?</h2>
+            <div class="testimonial-carousel">
+                <div class="item">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Excellent service and highly professional staff."</p>
+                        <h6>John Kimani</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4 border-top">
+        <div class="container">
+            <div class="partner-slider">
+                <div class="item"><img src="img/safaricom.png"></div>
+                <div class="item"><img src="img/brookside.png"></div>
+                <div class="item"><img src="img/epco.png"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-global pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="brand-name">BRIGHTWOODS</h2>
+                    <p class="small mt-3">THE ARCH PLACE-8TH FLOOR, NAIROBI, KENYA</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>SUBSCRIBE</h6>
+                    <input type="email" class="form-control mb-2" placeholder="Your email address">
+                    <button class="btn btn-danger w-100">Subscribe!</button>
+                </div>
+                <div class="col-md-3">
+                    <h6>QUICK LINKS</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>SOCIAL</h6>
+                    <div class="social-circle-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/tiny-slider.js"></script>
     <script>
+        // Hero Slider
         tns({ container: '.hero-slider', items: 1, autoplay: true, nav: false, controls: true });
+        
+        // Properties Slider
+        tns({ container: '.featured-carousel', items: 4, gutter: 20, responsive: { 0:{items:1}, 768:{items:4} } });
+
+        // Partners Slider
+        tns({ container: '.partner-slider', items: 5, autoplay: true, controls: false, nav: false });
     </script>
 </body>
 </html>
