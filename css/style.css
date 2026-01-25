@@ -155,3 +155,39 @@ body {
 
 .breadcrumb { background: transparent; font-size: 12px; }
 .breadcrumb-item a { color: #888; text-decoration: none; }
+/* Welcome Action Cards */
+.action-card {
+    padding: 40px;
+    border: 1px solid #eee;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.action-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+}
+.action-card img { width: 80px; margin-bottom: 20px; }
+
+/* Main Property Card Styling */
+.property-card-main {
+    background: #fff;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.img-container {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10px;
+}
+.bg-orange { background-color: #F37021; color: white; margin-right: 5px; }
+
+/* Footer Styling */
+.footer-main h6 { font-weight: bold; font-size: 14px; margin-bottom: 20px; }
+.footer-main a { color: #666; text-decoration: none; }
+.social-icons i {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #3b5998; /* Example for FB */
+}
