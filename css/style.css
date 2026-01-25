@@ -169,3 +169,8 @@ body {
         transform: none; margin-top: -30px; box-shadow: none; border-top: 5px solid var(--primary-red);
     }
 }
+.property-info-card {
+    /* ... keep your existing styles ... */
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    will-change: transform, opacity;
+}
