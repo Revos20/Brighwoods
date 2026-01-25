@@ -119,3 +119,39 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+/* Contact Form Styling */
+.custom-input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px 15px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.custom-input:focus {
+    border-color: var(--primary-red);
+    box-shadow: 0 0 5px rgba(227, 30, 36, 0.2);
+}
+
+.department-selector label {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Blog Styling */
+.blog-img-wrapper img {
+    border-radius: 8px;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.sidebar-widget {
+    background: #fff;
+    border-radius: 4px;
+}
+
+.bg-orange { background-color: #F37021; color: white; }
+
+.breadcrumb { background: transparent; font-size: 12px; }
+.breadcrumb-item a { color: #888; text-decoration: none; }
