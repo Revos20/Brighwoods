@@ -1,260 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Untree.co" />
-    <link rel="shortcut icon" href="favicon.png" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="bootstrap, bootstrap5" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-    <link rel="stylesheet" href="fonts/icomoon/style.css" />
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
-    <link rel="stylesheet" href="css/tiny-slider.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
-
-    <title>Property — Real Estate Listings</title>
-  </head>
-  <body>
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-    <nav class="site-nav">
-      <div class="container">
-        <div class="menu-bg-wrap">
-          <div class="site-navigation">
-            <a href="index.html" class="logo m-0 float-start">Property</a>
-            <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
-              <li><a href="index.html">Home</a></li>
-              <li class="has-children active">
-                <a href="properties.html">Properties</a>
-                <ul class="dropdown">
-                  <li><a href="#">Buy Property</a></li>
-                  <li><a href="#">Sell Property</a></li>
-                </ul>
-              </li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-            <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
-              <span></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <div class="hero page-inner overlay" style="background-image: url('images/hero_bg_1.jpg')">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-9 text-center mt-5">
-            <h1 class="heading" data-aos="fade-up">Available Properties</h1>
-            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
-              <ol class="breadcrumb text-center justify-content-center">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active text-white-50" aria-current="page">Properties</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-lg-6 text-center mx-auto">
-            <h2 class="font-weight-bold text-primary heading">Featured Apartments</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="property-slider-wrap">
-              <div class="property-slider">
-                
-                <div class="property-item">
-                  <a href="#" class="img"><img src="images/image_3.jpg" alt="Greatwall" class="img-fluid" /></a>
-                  <div class="property-content">
-                    <div class="price mb-2"><span>Commercial & Residential</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50">Greatwall Apartments & Shops</span>
-                      <span class="city d-block mb-3">9 Units (3BR) + Penthouse + 10 Shops</span>
-                      <a href="#" class="btn btn-primary py-2 px-3 btn-property-detail" 
-                         data-title="Greatwall Apartments & Shops" 
-                         data-price="Commercial & Residential" 
-                         data-img="images/image_3.jpg" 
-                         data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.673847958197!2d36.936528!3d-1.372277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f7142bc7095cd%3A0xd10121b8382d490d!2sGreat%20Wall%20Apartments%20Phase%20III!5e0!3m2!1sen!2ske!4v1700000000000">See details</a>
+<head>
+    <meta charset="UTF-8">
+    <title>Our Properties | Brightwoods</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="property-card">
+                    <div class="img-wrapper" style="background-image: url('img/land1.jpg');">
+                        <span class="tag tag-red">FOR SALE</span>
                     </div>
-                  </div>
-                </div>
-
-                <div class="property-item">
-                  <a href="#" class="img"><img src="images/image_4.jpg" alt="Tena Estate" class="img-fluid" /></a>
-                  <div class="property-content">
-                    <div class="price mb-2"><span>KSh 22,000,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50">Manyanja Rd</span>
-                      <span class="city d-block mb-3">Tena Estate</span>
-                      <a href="#" class="btn btn-primary py-2 px-3 btn-property-detail" 
-                         data-title="Tena Estate Villa" 
-                         data-price="KSh 22,000,000" 
-                         data-img="images/image_4.jpg" 
-                         data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.847551066794!2d36.8967!3d-1.2882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1b9428ad6b69%3A0xe23467f76b466490!2sTena%20Estate%20S%204!5e0!3m2!1sen!2ske!4v1700000000000">See details</a>
+                    <div class="p-3">
+                        <h5>Harambee Sacco Plot</h5>
+                        <p class="text-muted small">Donholm, Nairobi</p>
+                        <hr>
+                        <span class="price-text">Price on call</span>
                     </div>
-                  </div>
                 </div>
-
-                <div class="property-item">
-                  <a href="#" class="img"><img src="images/image_5.jpg" alt="Tasia 1" class="img-fluid" /></a>
-                  <div class="property-content">
-                    <div class="price mb-2"><span>KSh 75,000,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50">Outering Rd, Fedha</span>
-                      <span class="city d-block mb-3">Tasia 1 (1/4 Acre)</span>
-                      <a href="#" class="btn btn-primary py-2 px-3 btn-property-detail" 
-                         data-title="Tasia 1 (1/4 Acre)" 
-                         data-price="KSh 75,000,000" 
-                         data-img="images/image_5.jpg" 
-                         data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.835!2d36.90!3d-1.30!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1222!2sFedha%20Estate!5e0!3m2!1sen!2ske!4v1700000000000">See details</a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
-                <span class="prev" data-controls="prev">Prev</span>
-                <span class="next" data-controls="next">Next</span>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section section-properties">
-      <div class="container">
-        <div class="row mb-4">
-            <div class="col-md-12">
-                <h2 class="font-weight-bold text-primary heading">Land & Residential Plots</h2>
             </div>
-        </div>
-        <div class="row">
-          
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="#" class="img"><img src="images/image_19.jpg" alt="Maanzoni" class="img-fluid" /></a>
-              <div class="property-content">
-                <div class="price mb-2"><span>Starting KSh 7.5M/Acre</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50">Maanzoni behind Looqman (2nd Row)</span>
-                  <span class="city d-block mb-3">5 Acres Land</span>
-                  <a href="#" class="btn btn-primary py-2 px-3 btn-property-detail" 
-                     data-title="5 Acres Land - Maanzoni" 
-                     data-price="Starting KSh 7.5M/Acre" 
-                     data-img="images/image_19.jpg" 
-                     data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5!2d37.1!3d-1.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f763!2sMaanzoni%20lodge%20ltd!5e0!3m2!1sen!2ske!4v1700000000000">Enquire</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="#" class="img"><img src="images/image_33.jpg" alt="Enkasiti" class="img-fluid" /></a>
-              <div class="property-content">
-                <div class="price mb-2"><span>KSh 4,000,000</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50">Enkasiti 1</span>
-                  <span class="city d-block mb-3">1/4 Acre Residential Plot</span>
-                  <a href="#" class="btn btn-primary py-2 px-3 btn-property-detail" 
-                     data-title="1/4 Acre Plot - Enkasiti" 
-                     data-price="KSh 4,000,000" 
-                     data-img="images/image_33.jpg" 
-                     data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.3!2d36.9!3d-1.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f677!2sEnkasiti%20Plains%20Resort!5e0!3m2!1sen!2ske!4v1700000000000">Enquire</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="propertyModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header" style="background-color: #00204a; color: white;">
-            <h5 class="modal-title" id="modal-title">Property Details</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <img src="" id="modal-img" class="img-fluid rounded mb-3" style="width: 100%; height: 250px; object-fit: cover;">
-                <h4 id="modal-price" class="text-primary fw-bold"></h4>
-                <p id="modal-desc" class="text-muted"></p>
-              </div>
-              <div class="col-lg-6">
-                <div class="ratio ratio-16x9 mb-3" style="border: 1px solid #ddd;">
-                  <iframe id="modal-map" src="" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="d-grid">
-                  <a href="contact.html" class="btn btn-primary btn-lg">Contact Us to Enquire</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/counter.js"></script>
-    <script src="js/custom.js"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const detailButtons = document.querySelectorAll('.btn-property-detail');
-        const propertyModal = new bootstrap.Modal(document.getElementById('propertyModal'));
-
-        detailButtons.forEach(button => {
-          button.addEventListener('click', function(e) {
-            e.preventDefault(); 
-            
-            const title = this.getAttribute('data-title');
-            const price = this.getAttribute('data-price');
-            const img = this.getAttribute('data-img');
-            const mapUrl = this.getAttribute('data-map');
-            
-            const parent = this.closest('.property-content');
-            const locationText = parent.querySelector('.text-black-50').innerText;
-            const unitText = parent.querySelector('.city').innerText;
-
-            document.getElementById('modal-title').innerText = title;
-            document.getElementById('modal-price').innerText = price;
-            document.getElementById('modal-img').src = img;
-            document.getElementById('modal-desc').innerText = locationText + " | " + unitText;
-            document.getElementById('modal-map').src = mapUrl;
-
-            propertyModal.show();
-          });
-        });
-      });
-    </script>
-  </body>
+    </section>
+</body>
 </html>
