@@ -51,10 +51,10 @@
             <div class="hero-item" style="background-image: url('images/hero_bg_2.jpeg');"></div>
             <div class="hero-item" style="background-image: url('images/hero_bg_10.jpeg');"></div>
             <div class="hero-item" style="background-image: url('images/hero_bg_11.jpg');"></div>
-             <div class="hero-item" style="background-image: url('images/hero_bg_12.jpg');"></div>
+            <div class="hero-item" style="background-image: url('images/hero_bg_12.jpg');"></div>
             <div class="hero-item" style="background-image: url('images/hero_bg_21.jpg');"></div>
             <div class="hero-item" style="background-image: url('images/hero_bg_19.jpeg');"></div>
-             <div class="hero-item" style="background-image: url('images/hero_bg_31.jpeg');"></div>
+            <div class="hero-item" style="background-image: url('images/hero_bg_31.jpeg');"></div>
             <div class="hero-item" style="background-image: url('images/hero_bg_4.png');"></div>
             <div class="hero-item" style="background-image: url('images/hero_bg_5.jpeg');"></div>
         </div>
@@ -164,18 +164,15 @@
                         </div>
                     </div>
                 </div>
-                </div>
-        </div>
-    </section>
-
-    <section class="py-5 text-center">
-        <div class="container">
-            <h2 class="mb-5">Why Do People Love Working With Us?</h2>
-            <div class="testimonial-carousel">
                 <div class="item">
-                    <div class="testimonial-card">
-                        <p class="testimonial-text">"Excellent service and highly professional staff."</p>
-                        <h6>John Kimani</h6>
+                    <div class="property-card">
+                        <div class="img-wrapper" style="background-image: url('images/hero_bg_12.jpg');">
+                            <span class="badge badge-red">FOR SALE</span>
+                        </div>
+                        <div class="card-body-custom">
+                            <h6>Prime Muthaiga Plot</h6>
+                            <p class="price-text">KES. 55M</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,8 +183,9 @@
         <div class="container">
             <div class="partner-slider">
                 <div class="item"><img src="images/hero_bg_2.jpeg"></div>
-                <div class="item"><img src="images/hero_bg_31.jpg"></div>
+                <div class="item"><img src="images/hero_bg_31.jpeg"></div>
                 <div class="item"><img src="images/img_71.jpg"></div>
+                <div class="item"><img src="images/hero_bg_5.jpeg"></div>
             </div>
         </div>
     </section>
@@ -224,14 +222,43 @@
 
     <script src="js/tiny-slider.js"></script>
     <script>
-        // Hero Slider
-        tns({ container: '.hero-slider', items: 1, autoplay: true, nav: false, controls: true });
-        
-        // Properties Slider
-        tns({ container: '.featured-carousel', items: 4, gutter: 20, responsive: { 0:{items:1}, 768:{items:4} } });
+        // Hero Slider Initialization
+        tns({
+            container: '.hero-slider',
+            items: 1,
+            autoplay: true,
+            nav: false,
+            controls: true,
+            autoplayButtonOutput: false,
+            mouseDrag: true
+        });
+
+        // Featured Properties Slider
+        tns({
+            container: '.featured-carousel',
+            items: 1,
+            gutter: 20,
+            autoplay: true,
+            nav: true,
+            controls: false,
+            responsive: {
+                768: { items: 2 },
+                1024: { items: 4 }
+            }
+        });
 
         // Partners Slider
-        tns({ container: '.partner-slider', items: 5, autoplay: true, controls: false, nav: false });
+        tns({
+            container: '.partner-slider',
+            items: 2,
+            autoplay: true,
+            controls: false,
+            nav: false,
+            responsive: {
+                768: { items: 4 },
+                1024: { items: 6 }
+            }
+        });
     </script>
 </body>
 </html>
