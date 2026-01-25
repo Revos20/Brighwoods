@@ -1,103 +1,121 @@
+/* =========================================
+   1. GLOBAL VARIABLES & RESET
+   ========================================= */
 :root {
     --primary-red: #E31E24;
-    --dark-grey: #333;
+    --dark-grey: #222;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
 }
 
-body { margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; }
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    color: var(--dark-grey);
+}
 
-/* Navigation */
-.header {
+/* =========================================
+   2. NAVIGATION (Brightwoods Branding)
+   ========================================= */
+.main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
-    background: white;
-    border-bottom: 2px solid #eee;
+    padding: 15px 5%;
+    background: var(--white);
+    border-bottom: 3px solid var(--dark-grey);
     position: sticky;
-    top: 0; z-index: 1000;
+    top: 0;
+    z-index: 1000;
 }
 
-.nav ul { display: flex; list-style: none; gap: 20px; }
-.nav a { text-decoration: none; color: #333; font-weight: 500; font-size: 14px; }
+.logo h1 {
+    font-size: 24px;
+    color: var(--primary-red);
+    margin: 0;
+    text-transform: uppercase;
+}
 
-/* Dropdown Logic */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-weight: 600;
+    font-size: 14px;
+}
+
 .dropdown { position: relative; }
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%; left: 0;
-    background: white;
+    background: var(--white);
     min-width: 180px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    top: 100%;
     padding: 10px 0;
 }
+
 .dropdown:hover .dropdown-menu { display: block; }
-.dropdown-menu li a { padding: 8px 20px; display: block; }
 
-/* Hero Section */
-.hero {
-    height: 80vh;
+/* =========================================
+   3. HERO SLIDER & FLOATING CARD
+   ========================================= */
+.hero-section {
     position: relative;
-    overflow: hidden;
-}
-
-.hero-slider .slide {
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+    height: 80vh;
 }
 
 .property-info-card {
     position: absolute;
-    right: 10%;
+    right: 5%;
     top: 50%;
     transform: translateY(-50%);
-    background: white;
+    background: var(--white);
     width: 350px;
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    z-index: 10;
 }
 
-.property-info-card h2 { font-size: 22px; margin-top: 0; }
-.details { 
-    display: flex; justify-content: space-between; 
-    border-top: 1px solid #eee; padding: 15px 0;
-}
+.property-info-card h2 { font-size: 22px; margin-bottom: 10px; }
 
-.tag { padding: 5px 10px; color: white; font-size: 12px; font-weight: bold; }
-.for-sale { background: var(--primary-red); }
-.featured { background: #F37021; margin-left: 5px; }
-
-/* Red Search Bar */
-.quick-search {
+/* =========================================
+   4. RED QUICK SEARCH BAR
+   ========================================= */
+.search-bar-red {
     background: var(--primary-red);
-    padding: 20px 5%;
-    color: white;
+    padding: 25px 0;
+    color: var(--white);
 }
 
-.search-inner {
+.search-flex {
     display: flex;
     align-items: flex-end;
-    gap: 20px;
+    gap: 15px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .field-group { flex: 1; }
-.field-group label { display: block; font-size: 11px; margin-bottom: 8px; font-weight: bold; }
+.field-group label { display: block; font-size: 11px; font-weight: bold; margin-bottom: 8px; }
 .field-group input, .field-group select {
     width: 100%;
     padding: 12px;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
-.btn-search {
-    background: white;
-    color: black;
+.btn-search-white {
+    background: var(--white);
+    color: var(--dark-grey);
     border: none;
     padding: 12px 40px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 4px;
 }
