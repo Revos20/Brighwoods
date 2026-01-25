@@ -1,72 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Brightwoods Apartments | Home</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/tiny-slider.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+/* Welcome Action Cards */
+.action-card {
+    padding: 40px;
+    border: 1px solid #eee;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.action-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+}
+.action-card img { width: 80px; margin-bottom: 20px; }
 
-    <header class="main-header">
-        <div class="logo"><h1>Brightwoods</h1></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Properties <i class="fa fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">For Rent</a></li>
-                        <li><a href="#">For Sale</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact us</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
+/* Main Property Card Styling */
+.property-card-main {
+    background: #fff;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.img-container {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10px;
+}
+.bg-orange { background-color: #F37021; color: white; margin-right: 5px; }
 
-    <section class="hero-section">
-        <div class="my-slider">
-            <div style="background-image:url('images/hero_bg_1.jpg'); height:80vh; background-size:cover;"></div>
-            <div style="background-image:url('images/hero_bg_11.jpg'); height:80vh; background-size:cover;"></div>
-        </div>
-
-        <div class="property-info-card">
-            <h2>Brightwoods Premium Residency</h2>
-            <p>Nairobi, Kenya</p>
-            <hr>
-            <p><strong>Price on call</strong></p>
-            <button class="btn btn-danger">View Details</button>
-        </div>
-    </section>
-
-    <section class="search-bar-red">
-        <div class="search-flex">
-            <div class="field-group">
-                <label>KEYWORD</label>
-                <input type="text" placeholder="Enter Keyword...">
-            </div>
-            <div class="field-group">
-                <label>STATUS</label>
-                <select><option>All Status</option></select>
-            </div>
-            <button class="btn-search-white">SEARCH</button>
-        </div>
-    </section>
-
-    <script src="js/tiny-slider.js"></script>
-    <script>
-        var slider = tns({
-            container: '.my-slider',
-            items: 1,
-            slideBy: 'page',
-            autoplay: true,
-            controls: true,
-            nav: false
-        });
-    </script>
-</body>
-</html>
+/* Footer Styling */
+.footer-main h6 { font-weight: bold; font-size: 14px; margin-bottom: 20px; }
+.footer-main a { color: #666; text-decoration: none; }
+.social-icons i {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #3b5998; /* Example for FB */
+}
