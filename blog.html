@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog | Brightwoods Apartments</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo"><h1>Brightwoods</h1></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container py-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
+                <li class="breadcrumb-item active">BLOG</li>
+            </ol>
+        </nav>
+        <h1 class="text-center mb-5">Blog</h1>
+
+        <div class="row">
+            <div class="col-md-8">
+                <article class="blog-card mb-5">
+                    <div class="blog-img-wrapper">
+                        <img src="img/blog-hero.jpg" class="img-fluid" alt="Birdhouse Blog">
+                    </div>
+                    <div class="blog-meta mt-3 text-muted">
+                        <span><i class="fa fa-user"></i> pertom Digital</span> | 
+                        <span><i class="fa fa-calendar"></i> December 19, 2022</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <div class="sidebar-widget p-4 mb-4 border">
+                    <h5 class="mb-3">Search All Area Listings</h5>
+                    <div class="position-relative">
+                        <input type="text" class="form-control" placeholder="Enter Keyword...">
+                        <i class="fa fa-search position-absolute" style="right: 15px; top: 12px;"></i>
+                    </div>
+                    <button class="btn btn-link text-dark w-100 mt-2 text-center">Search</button>
+                </div>
+
+                <div class="sidebar-widget p-4 border">
+                    <h5 class="mb-3">Featured Properties</h5>
+                    <div class="featured-mini-card">
+                        <img src="img/mini-property.jpg" class="img-fluid mb-2">
+                        <div class="badge bg-orange mb-2">FEATURED</div>
+                        <div class="badge bg-danger mb-2">FOR SALE</div>
+                        <h6>Prime Plot for Sale – Central Park Estate</h6>
+                        <p class="text-danger">From KES.55,000,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
