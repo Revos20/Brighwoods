@@ -3,7 +3,7 @@
    ========================================= */
 :root {
     --primary-red: #E31E24;
-    --primary-orange: #F37021; /* Added for featured tags */
+    --primary-orange: #F37021;
     --dark-grey: #222;
     --medium-grey: #777;
     --light-grey: #efefef;
@@ -30,24 +30,15 @@ body {
     position: sticky; top: 0; z-index: 1000;
 }
 
-.brand-name { 
-    color: var(--primary-red); 
-    font-size: 24px; 
-    font-weight: 900; 
-    letter-spacing: -1px;
-}
+.brand-name { color: var(--primary-red); font-size: 24px; font-weight: 900; letter-spacing: -1px; }
 
 .nav-links { display: flex; list-style: none; gap: 25px; margin: 0; align-items: center;}
 .nav-links a { 
-    color: var(--dark-grey); 
-    font-weight: 600; 
-    font-size: 13px; 
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    color: var(--dark-grey); font-weight: 600; font-size: 13px; 
+    text-transform: uppercase; letter-spacing: 0.5px; text-decoration: none;
 }
 .nav-links a:hover, .nav-links a.active { color: var(--primary-red); }
 
-/* Dropdowns */
 .dropdown { position: relative; padding: 20px 0; }
 .dropdown-menu {
     display: block; position: absolute; top: 100%; left: 0;
@@ -56,135 +47,536 @@ body {
     opacity: 0; visibility: hidden; transform: translateY(10px);
     transition: var(--transition);
 }
-.dropdown:hover .dropdown-menu { 
-    opacity: 1; visibility: visible; transform: translateY(0); 
-}
-.dropdown-menu li a { 
-    padding: 12px 20px; display: block; 
-    text-transform: none; font-size: 14px; color: var(--medium-grey); 
-}
-.dropdown-menu li a:hover { background: #f9f9f9; color: var(--primary-red); }
+.dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+.dropdown-menu li a { padding: 12px 20px; display: block; text-transform: none; font-size: 14px; color: var(--medium-grey); }
 
 /* =========================================
    3. HERO SLIDER & FLOATING CARD
    ========================================= */
 .hero-section { position: relative; height: 75vh; overflow: hidden; }
-.hero-item { height: 100%; background-size: cover; background-position: center; }
+.hero-item { height: 75vh; width: 100%; background-size: cover; background-position: center; display: block; }
 
 .property-info-card {
     position: absolute; right: 8%; top: 50%; transform: translateY(-50%);
     background: var(--white); width: 380px; padding: 35px; 
     box-shadow: var(--shadow-hover); z-index: 10;
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card-title { font-size: 22px; font-weight: 700; line-height: 1.3; margin-bottom: 10px; }
 .card-location { font-size: 14px; color: var(--medium-grey); margin-bottom: 20px; }
-
 .card-specs { 
     display: flex; justify-content: space-between; 
     padding: 15px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; 
     margin: 20px 0; font-size: 13px; font-weight: 600;
 }
 
-.tag { padding: 4px 10px; color: #fff; font-size: 10px; font-weight: 800; border-radius: 2px; }
-.tag-red { background: var(--primary-red); }
-.tag-orange { background: var(--primary-orange); }
-.card-price { font-size: 20px; font-weight: 800; color: var(--dark-grey); }
-
 /* =========================================
-   4. RED SEARCH BAR
+   4. SEARCH BAR (RED)
    ========================================= */
 .search-bar-red { background: var(--primary-red); padding: 25px 0; color: #fff; }
-.search-flex { display: flex; align-items: flex-end; gap: 15px; flex-wrap: wrap; }
-.field-group label { font-size: 10px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; color: rgba(255,255,255,0.8); }
-.field-group input, .field-group select { 
-    width: 100%; padding: 12px; border: none; border-radius: 2px; font-size: 14px;
-}
-.btn-search-main { 
-    background: var(--dark-grey); color: #fff; border: none; 
-    padding: 12px 45px; font-weight: 700; cursor: pointer; 
-    text-transform: uppercase; border-radius: 2px; 
-}
-.btn-search-main:hover { background: #000; }
+.search-flex { display: flex; align-items: flex-end; gap: 15px; flex-wrap: wrap; justify-content: center; }
+.field-group { flex: 1; min-width: 200px; }
+.field-group label { font-size: 10px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; color: rgba(255,255,255,0.8); display: block; }
+.field-group input, .field-group select { width: 100%; padding: 12px; border: none; border-radius: 2px; font-size: 14px; }
+.btn-search-main { background: var(--dark-grey); color: #fff; border: none; padding: 12px 45px; font-weight: 700; cursor: pointer; text-transform: uppercase; border-radius: 2px; }
 
 /* =========================================
-   5. PROPERTY CARDS
+   5. PROPERTY CARDS & SLIDERS
    ========================================= */
-.property-card { 
-    background: #fff; border: 1px solid #eee; 
-    transition: var(--transition); overflow: hidden; 
-}
+.tns-outer { position: relative; }
+.property-card { background: #fff; border: 1px solid #eee; transition: var(--transition); overflow: hidden; height: 100%; }
 .property-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
 
-.img-wrapper { 
-    height: 240px; background-size: cover; background-position: center; 
-    position: relative; transition: var(--transition);
-}
+.img-wrapper { height: 240px; background-size: cover; background-position: center; position: relative; transition: var(--transition); }
 .property-card:hover .img-wrapper { transform: scale(1.05); }
 
+.tag-container { position: absolute; top: 10px; left: 10px; display: flex; gap: 5px; z-index: 2; }
+.tag { padding: 4px 10px; color: #fff; font-size: 10px; font-weight: 800; border-radius: 2px; text-transform: uppercase; }
+
+/* Slider Nav Overrides */
+#new-prop-controls { display: flex; gap: 10px; position: absolute; top: -55px; right: 15px; z-index: 10; }
+#new-prop-controls button { border: 1px solid #ddd; background: #fff; padding: 8px 15px; cursor: pointer; transition: 0.3s; }
+#new-prop-controls button:hover { background: var(--primary-red); color: #fff; border-color: var(--primary-red); }
+
 /* =========================================
-   6. EXPLORE LIFESTYLES (Enhanced Hover)
+   6. EXPLORE LIFESTYLES
    ========================================= */
 .lifestyle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); background: #eee; gap: 1px; }
-.lifestyle-card { 
-    padding: 60px 20px; background: #999; color: #fff; 
-    text-align: center; cursor: pointer; transition: var(--transition); 
-}
-.lifestyle-card:hover, .lifestyle-card.active { 
-    background: var(--primary-red); 
-    padding-top: 50px; padding-bottom: 70px; /* Slight expansion effect */
-}
-.lifestyle-icon img { 
-    height: 70px; width: 70px; object-fit: cover; border-radius: 50%;
-    margin-bottom: 20px; border: 2px solid rgba(255,255,255,0.3);
-}
+.lifestyle-card { padding: 60px 20px; background: #999; color: #fff; text-align: center; cursor: pointer; transition: var(--transition); }
+.lifestyle-card:hover, .lifestyle-card.active { background: var(--primary-red); padding-top: 50px; padding-bottom: 70px; }
+.lifestyle-icon img { height: 70px; width: 70px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; border: 2px solid rgba(255,255,255,0.3); }
 
 /* =========================================
-   7. FOOTER
+   7. LOCATION GRID
    ========================================= */
-.footer-global { background: #fff; border-top: 4px solid var(--primary-red); padding: 80px 0 30px; }
-.footer-title { text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px; color: var(--dark-grey); font-weight: 800; }
-.footer-links a:hover { text-decoration: underline; color: var(--dark-grey); }
-
-.social-icons i { 
-    width: 40px; height: 40px; line-height: 40px; text-align: center;
-    border: 1px solid #eee; border-radius: 50%; margin-right: 10px; 
-    color: var(--medium-grey); transition: var(--transition);
-}
-.social-icons i:hover { background: var(--primary-red); color: #fff; border-color: var(--primary-red); }
+.location-card { position: relative; background-size: cover; background-position: center; border-radius: 12px; overflow: hidden; display: flex; align-items: flex-end; transition: var(--transition); cursor: pointer; }
+.location-card.tall { height: 520px; }
+.location-card.small-box { height: 252px; }
+.location-overlay { width: 100%; padding: 20px; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%); color: white; }
 
 /* =========================================
-   8. RESPONSIVE
+   8. FOOTER & SOCIALS
    ========================================= */
+.header-socials i, .social-icons i { 
+    width: 35px; height: 35px; line-height: 35px; text-align: center;
+    border: 1px solid #eee; border-radius: 50%; margin-left: 10px; 
+    color: var(--medium-grey); transition: var(--transition); cursor: pointer;
+}
+.header-socials i:hover, .social-icons i:hover { background: var(--primary-red); color: #fff; border-color: var(--primary-red); }
+
+/* =========================================
+   9. RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+    .main-header { flex-direction: column; padding: 20px; }
+    .nav-links { margin-top: 15px; justify-content: center; }
+    .property-info-card { position: relative; width: 100%; right: 0; top: 0; transform: none; margin-top: -30px; border-top: 5px solid var(--primary-red); }
+    .search-flex { flex-direction: column; align-items: stretch; }
+    .location-card.tall, .location-card.small-box { height: 300px; }
+}
+/* =========================================
+   PROPERTY CARDS - COMPLETE RESTORATION
+   ========================================= */
+.property-card { 
+    background: #fff; 
+    border: 1px solid #eee; 
+    transition: var(--transition); 
+    overflow: hidden; 
+    position: relative; /* Essential for absolute tags */
+    height: 100%;
+}
+
+.property-card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: var(--shadow-hover); 
+}
+
+/* 1. Image & Overlay Tags */
+.img-wrapper { 
+    height: 240px; 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+    overflow: hidden;
+}
+
+.property-card:hover .img-wrapper { 
+    transform: scale(1.05); 
+}
+
+.tag-container {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    gap: 6px;
+    z-index: 5;
+}
+
+.tag { 
+    padding: 5px 12px; 
+    color: #fff; 
+    font-size: 10px; 
+    font-weight: 800; 
+    border-radius: 3px; 
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.tag-red { background: var(--primary-red); }
+.tag-orange { background: var(--primary-orange); }
+
+/* 2. Action Buttons (Heart/Plus) */
+.action-buttons {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 5;
+}
+
+.action-buttons .btn {
+    border: none;
+    margin-left: 8px;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    color: var(--dark-grey);
+    transition: var(--transition);
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.action-buttons .btn:hover {
+    background: var(--primary-red);
+    color: #fff;
+}
+
+/* 3. Card Content & Specs */
+.property-content {
+    padding: 20px;
+}
+
+.property-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--dark-grey);
+}
+
+.property-location {
+    font-size: 13px;
+    color: var(--medium-grey);
+    margin-bottom: 15px;
+}
+
+.card-specs { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 12px 0; 
+    border-top: 1px solid #f0f0f0; 
+    border-bottom: 1px solid #f0f0f0; 
+    margin: 15px 0; 
+    font-size: 12px; 
+    font-weight: 600;
+    color: var(--medium-grey);
+}
+
+.card-specs span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-price { 
+    font-size: 22px; 
+    font-weight: 800; 
+    color: var(--dark-grey);
+    display: block;
+}
+
+/* Tiny Slider Gutter Fix */
+.tns-item {
+    padding-bottom: 15px; /* Gives shadow room to breathe */
+}
+/* Fix: Don't force flex here, let the JS handle it */
+.new-properties-carousel {
+    display: block; /* Tiny Slider will change this to flex internally */
+}
+
+/* Ensure the wrapper has enough height to show the moving cards */
+.tns-ovh {
+    overflow: hidden;
+    padding: 20px 0; /* Gives space for the hover-up effect and shadows */
+}
+.properties-sale-section { padding: 60px 0; background: #f9f9f9; }
+
+.section-header h2 { font-size: 28px; font-weight: 700; color: #333; margin-bottom: 5px; }
+.section-header p { color: #777; margin-bottom: 30px; font-size: 14px; }
+
+/* The Overlay Card */
+.property-card {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    height: 400px; /* Adjust based on your image height */
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Dark Gradient Overlay */
+.card-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 70%;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
+    z-index: 1;
+}
+
+/* Tags & Actions */
+.card-tags { position: absolute; top: 15px; left: 15px; z-index: 2; display: flex; gap: 5px; }
+.tag { padding: 4px 10px; font-size: 10px; font-weight: 800; color: #fff; text-transform: uppercase; border-radius: 2px; }
+.tag.featured { background: #FF7043; }
+.tag.for-sale { background: #E31E24; }
+
+.card-actions { position: absolute; top: 15px; right: 15px; z-index: 2; display: flex; gap: 8px; }
+.action-btn { background: rgba(0,0,0,0.4); border: none; color: #fff; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 14px; }
+
+/* Text Content */
+.card-overlay {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    color: #fff;
+}
+
+.prop-title { font-size: 18px; font-weight: 700; line-height: 1.3; margin-bottom: 5px; }
+.prop-sub { font-size: 13px; opacity: 0.9; margin-bottom: 10px; }
+
+.prop-details { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-end; 
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 10px;
+}
+
+.price-red, .prop-price span { color: #E31E24; font-weight: 800; font-size: 18px; }
+
+.specs { font-size: 12px; display: flex; gap: 15px; }
+.specs i { margin-right: 5px; }
+/* =========================================
+   TESTIMONIALS SECTION
+   ========================================= */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #E6E8E3; /* The subtle sage/grey background from the image */
+    text-align: center;
+}
+
+.testimonials-section .section-header h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonials-section .section-header p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* Individual Card */
+.testimonial-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 4px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin: 10px; /* Space for the slider gutter */
+}
+
+.stars {
+    color: #F3AF43; /* Golden star color */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.user-role {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.user-feedback {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+    max-width: 280px;
+}
+
+/* Dots Styling (Reuse your existing tns-nav styles) */
+.testimonials-section .tns-nav {
+    margin-top: 40px;
+}
+/* =========================================
+   NEWS & ARTICLES STYLING
+   ========================================= */
+.news-articles-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.news-articles-section .section-header h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.news-articles-section .section-header p {
+    color: #888;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.article-card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    /* Optional: box-shadow: 0 5px 15px rgba(0,0,0,0.05); */
+    display: flex;
+    flex-direction: column;
+}
+
+.article-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.article-body {
+    padding: 25px 0; /* Padding as per image - white space around text */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.article-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #000;
+    margin-bottom: 10px;
+    min-height: 52px; /* Keeps titles aligned */
+}
+
+.article-meta {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.article-excerpt {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Red Read More Button */
+.btn-read-more {
+    background-color: #FF1919; /* Vibrant red from your image */
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    align-self: flex-start; /* Move to right like the image: align-self: flex-end; */
+    transition: background 0.3s ease;
+}
+
+.btn-read-more:hover {
+    background-color: #d11515;
+}
+
+/* Responsive adjustment */
 @media (max-width: 992px) {
-    .property-info-card { width: 320px; padding: 25px; right: 5%; }
+    .articles-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
-    .main-header { flex-direction: column; gap: 15px; }
-    .nav-links { gap: 15px; flex-wrap: wrap; justify-content: center; }
-    .search-flex { flex-direction: column; align-items: stretch; }
-    .property-info-card { 
-        position: relative; width: 100%; right: 0; top: 0; 
-        transform: none; margin-top: -30px; box-shadow: none; border-top: 5px solid var(--primary-red);
-    }
+    .articles-grid { grid-template-columns: 1fr; }
 }
-.property-info-card {
-    /* ... keep your existing styles ... */
-    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    will-change: transform, opacity;
+.btn-read-more {
+    align-self: flex-end; /* This pushes the button to the right side */
+    margin-right: 20px;   /* Match the spacing in your screenshot */
 }
-/* Ensure the slider items actually have dimensions */
-.hero-item {
-    height: 75vh; /* This matches your .hero-section height */
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block; /* Ensure it's treated as a block */
+/* Section Header Styling */
+.properties-sale-section { padding: 60px 0; background: #fff; }
+.section-header h2 { font-size: 28px; font-weight: 700; color: #333; margin-bottom: 5px; }
+.section-header p { color: #888; font-size: 14px; margin-bottom: 30px; }
+
+/* The Card Wrapper */
+.property-card-item {
+    padding: 10px; /* Space for the slider gutter */
 }
 
-/* Optional: Fix for Tiny Slider initialization flicker */
-.tns-outer {
+.prop-card-bg {
     position: relative;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/* Dark Gradient Overlay */
+.prop-card-bg::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+    z-index: 1;
+}
+
+/* UI Elements - Tags & Action Buttons */
+.card-tags { position: absolute; top: 15px; left: 15px; z-index: 2; display: flex; gap: 6px; }
+.tag { padding: 4px 10px; font-size: 10px; font-weight: 800; color: #fff; text-transform: uppercase; border-radius: 3px; }
+.tag-featured { background: #FF7043; }
+.tag-for-sale { background: #E31E24; }
+
+.card-actions { position: absolute; top: 15px; right: 15px; z-index: 2; display: flex; gap: 8px; }
+.circle-btn { 
+    background: rgba(255, 255, 255, 0.2); border: none; color: #fff; 
+    width: 34px; height: 34px; border-radius: 50%; cursor: pointer;
+    transition: 0.3s;
+}
+.circle-btn:hover { background: #E31E24; }
+
+/* Content Details */
+.prop-overlay-content {
+    position: relative;
+    z-index: 2;
+    padding: 25px 20px;
+    color: #fff;
+}
+
+.prop-title { font-size: 18px; font-weight: 700; line-height: 1.3; margin-bottom: 5px; }
+.prop-location { font-size: 13px; opacity: 0.8; margin-bottom: 15px; }
+
+.prop-footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 15px;
+}
+
+.price-red, .price-red-call { 
+    color: #E31E24; font-weight: 800; font-size: 18px; 
+}
+
+.prop-specs { display: flex; gap: 15px; font-size: 13px; font-weight: 600; }
+.prop-specs span { display: flex; align-items: center; gap: 6px; }
