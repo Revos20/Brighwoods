@@ -3206,3 +3206,219 @@ function getImageArray (start, end, imgSelector) {
 
 return tns;
 })();
+
+    // Featured Properties Slider
+    tns({
+        container: '.featured-carousel',
+        items: 1,             // 1 item on mobile
+        gutter: 20,           // Space between cards
+        slideBy: 'page',      // Slides by the number of visible items
+        autoplay: true,
+        autoplayButtonOutput: false,
+        nav: true,            // Dots at the bottom
+        controls: false,      // Arrows (set to true if you want < and > buttons)
+        mouseDrag: true,      // Allows "swiping" with mouse or finger
+        loop: true,           // Infinite sliding
+        responsive: {
+            768: {
+                items: 2      // 2 items on tablets
+            },
+            1024: {
+                items: 4      // 4 items on desktop
+            }
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        // Featured Properties Slider (Your existing one)
+        tns({
+            container: '.featured-carousel',
+            items: 1,
+            gutter: 20,
+            slideBy: 'page',
+            autoplay: true,
+            autoplayButtonOutput: false,
+            nav: true,
+            controls: false,
+            mouseDrag: true,
+            responsive: {
+                768: { items: 2 },
+                1024: { items: 4 }
+            }
+        });
+
+        // NEW: Explore New Lifestyles Slider
+        tns({
+            container: '.lifestyle-carousel',
+            items: 1,
+            gutter: 20,
+            edgePadding: 30, // Shows a peak of the next card
+            mouseDrag: true,
+            autoplay: false,
+            nav: false,
+            controls: true, // Shows < > arrows
+            responsive: {
+                768: { items: 2 },
+                1024: { items: 3 }
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // ... Keep your other sliders (Featured, Lifestyle) here ...
+
+        // New Properties Slider
+        tns({
+            container: '.new-properties-carousel',
+            items: 1,
+            gutter: 25,
+            slideBy: 1,
+            autoplay: false,
+            nav: true,
+            navPosition: 'bottom',
+            controls: true,
+            controlsContainer: '#new-prop-controls', // Links to your custom buttons
+            mouseDrag: true,
+            loop: true,
+            responsive: {
+                768: { items: 2 },
+                1024: { items: 4 }
+            }
+        });
+    });
+$(document).ready(function(){
+    var owl = $('.new-properties-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false, // We use custom buttons
+        dots: true, // Shows the small indicators at the bottom
+        responsive:{
+            0:{ items:1 },
+            768:{ items:2 },
+            1000:{ items:4 } // Shows 4 items like the screenshot
+        }
+    });
+
+    // Custom Navigation events
+    $('.next').click(function() {
+        owl.trigger('next.owl.carousel');
+    });
+    $('.prev').click(function() {
+        owl.trigger('prev.owl.carousel');
+    });
+});
+$(document).ready(function(){
+    var owl = $('.new-properties-carousel').owlCarousel({
+        loop: true,           // Infinite loop
+        margin: 20,           // Space between items
+        autoplay: true,       // Makes it slide automatically
+        autoplayTimeout: 3000, // Slides every 3 seconds
+        autoplayHoverPause: true, // Stops sliding when mouse is over it
+        nav: false,           // Hide default nav to use your custom buttons
+        dots: true,           // Show pagination dots at bottom
+        responsive:{
+            0:{ items: 1 },    // 1 item on mobile
+            768:{ items: 2 },  // 2 items on tablets
+            1200:{ items: 4 }  // 4 items on desktop (matching your screenshot)
+        }
+    });
+
+    // Link your custom buttons to the carousel
+    $('.next').click(function() {
+        owl.trigger('next.owl.carousel');
+    });
+    $('.prev').click(function() {
+        owl.trigger('prev.owl.carousel');
+    });
+});
+
+    // Initialize Featured Properties (Existing)
+    var featuredSlider = tns({
+        container: '.featured-carousel',
+        items: 1,
+        slideBy: 'page',
+        autoplay: true,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        gutter: 20,
+        nav: false,
+        controls: false, // Assuming this is controlled elsewhere or automatic
+        responsive: {
+            640: { items: 2 },
+            900: { items: 3 }
+        }
+    });
+
+    // Initialize New Properties (The New Addition)
+/* Initialize the New Properties Slider */
+var propertySlider = tns({
+    container: '.new-properties-carousel',
+    autoplay: true,               // This turns on the automatic sliding
+    autoplayTimeout: 4000,        // How long each slide stays (4 seconds)
+    autoplayButtonOutput: false,  // Prevents a "Stop" button from appearing
+    autoplayHoverPause: true,     // Pauses when user puts mouse over a card
+    controlsContainer: '#new-prop-controls',
+    nav: false,                   // Hides the dots if you don't want them
+    items: 3,
+    gutter: 20,
+    mouseDrag: true,
+    responsive: {
+        0: { items: 1 },
+        768: { items: 2 },
+        1024: { items: 3 }
+    }
+});
+var saleSlider = tns({
+    container: '.properties-for-sale-slider',
+    items: 3,
+    gutter: 20,
+    slideBy: 'page',
+    autoplay: true,
+    autoplayTimeout: 3500,
+    autoplayButtonOutput: false, // Important: prevents UI clutter
+    mouseDrag: true,
+    nav: true,                   // Enables those two dots at the bottom
+    navPosition: 'bottom',
+    controls: false,             // Set to true if you want arrows
+    responsive: {
+        0: { items: 1 },
+        768: { items: 2 },
+        1024: { items: 3 }
+    }
+});
+var testimonialSlider = tns({
+    container: '.testimonials-slider',
+    items: 3,
+    gutter: 30,
+    slideBy: 1,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayButtonOutput: false,
+    nav: true,
+    controls: false,
+    mouseDrag: true,
+    responsive: {
+        0: { items: 1 },
+        768: { items: 2 },
+        1024: { items: 3 }
+    }
+});
+var propertySaleSlider = tns({
+    container: '.properties-sale-slider',
+    items: 3,
+    gutter: 0,
+    slideBy: 1,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayButtonOutput: false,
+    nav: true,            // This enables the dots
+    navPosition: 'bottom',
+    controls: false,      // Disables arrows (as per your image)
+    mouseDrag: true,
+    responsive: {
+        0: { items: 1 },
+        768: { items: 2 },
+        1024: { items: 3 }
+    }
+});
