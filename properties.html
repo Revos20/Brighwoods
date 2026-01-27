@@ -2,27 +2,230 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Our Properties | Brightwoods</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | Brightwoods Apartment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="container py-5">
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="property-card">
-                    <div class="img-wrapper" style="background-image: url('img/land1.jpg');">
-                        <span class="tag tag-red">FOR SALE</span>
-                    </div>
-                    <div class="p-3">
-                        <h5>Harambee Sacco Plot</h5>
-                        <p class="text-muted small">Donholm, Nairobi</p>
-                        <hr>
-                        <span class="price-text">Price on call</span>
+        <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+     <header class="main-header">
+        <div class="logo">
+            <h1 class="brand-name">Brightwoods Apartments Company</h1>
+        </div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="properties.html">Properties <i class="fa fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="properties.html?status=rent">For Rent</a></li>
+                        <li><a href="properties.html?status=sale">For Sale</a></li>
+                        <li><a href="properties.html?status=prime">Prime</a></li>
+                        <li><a href="properties.html?status=featured">Featured</a></li>
+                        <li><a href="properties.html?status=luxury">Luxury</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact us</a></li>
+                 <li><a href="about.html">About us</a></li>
+                <li><a href="contactContact us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header-socials">
+            <i class="fa fa-search"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </header>
+
+    <section class="properties-page-header py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h1 class="fw-bold">All Properties</h1>
+            <p>Home / Properties</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+                <button class="btn btn-outline-danger active filter-btn" data-filter="all">All Properties</button>
+                <button class="btn btn-outline-danger filter-btn" data-filter="for-sale">For Sale</button>
+                <button class="btn btn-outline-danger filter-btn" data-filter="for-rent">For Rent</button>
+                <button class="btn btn-outline-danger filter-btn" data-filter="featured">Featured</button>
+            </div>
+
+            <div class="row g-4" id="property-grid">
+                
+                <div class="col-md-4 property-item for-sale featured">
+                    <div class="property-card h-100 shadow-sm border-0">
+                        <div class="img-wrapper" style="background-image: url('images/afford1.jpeg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-danger m-3">FOR SALE</span>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">2 & 3 Affordable house in Kitengela</h6>
+                            <p class="small text-muted"><i class="fas fa-map-marker-alt"></i> Kitengela Town Center</p>
+                            <div class="d-flex justify-content-between border-top pt-2 mt-2">
+                                <span class="small"><i class="fas fa-bed"></i> 3 Br</span>
+                                <span class="small"><i class="fas fa-shower"></i> 2 Ba</span>
+                                <p class="text-danger fw-bold mb-0">Price on call</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="col-md-4 property-item for-sale featured">
+                    <div class="property-card h-100 shadow-sm border-0">
+                        <div class="img-wrapper" style="background-image: url('images/hero_bg_2.jpeg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-warning text-dark m-3">FEATURED</span>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">2 & 3 Muthangari Residency with DSQ</h6>
+                            <p class="small text-muted"><i class="fas fa-map-marker-alt"></i> Off Kanjata Rd, Nairobi</p>
+                            <div class="d-flex justify-content-between border-top pt-2 mt-2">
+                                <span class="small"><i class="fas fa-expand"></i> 1,940 SqFt</span>
+                                <p class="text-danger fw-bold mb-0">Price on call</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 property-item for-sale">
+                    <div class="property-card h-100 shadow-sm border-0">
+                        <div class="img-wrapper" style="background-image: url('images/apart8.jpeg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-danger m-3">FOR SALE</span>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Executive Apartments Westlands</h6>
+                            <p class="small text-muted"><i class="fas fa-map-marker-alt"></i> Tena Estate, Manyanja Rd</p>
+                            <div class="d-flex justify-content-between border-top pt-2 mt-2">
+                                <span class="small"><i class="fas fa-bed"></i> 2 Br</span>
+                                <p class="text-danger fw-bold mb-0">KES 22,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 property-item for-rent">
+                    <div class="property-card h-100 shadow-sm border-0">
+                        <div class="img-wrapper" style="background-image: url('images/apart16.jpeg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-info m-3">FOR RENT</span>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Lavington Duplex</h6>
+                            <p class="small text-muted">Lavington, Nairobi</p>
+                            <div class="d-flex justify-content-between border-top pt-2 mt-2">
+                                <p class="text-danger fw-bold mb-0">KES 150,000/mo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 property-item for-sale luxury">
+                    <div class="property-card h-100 shadow-sm border-0">
+                        <div class="img-wrapper" style="background-image: url('images/hero_bg_12.jpg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-dark m-3">LUXURY</span>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Modern Suburban Villa</h6>
+                            <p class="small text-muted">Karen, Nairobi</p>
+                            <div class="d-flex justify-content-between border-top pt-2 mt-2">
+                                <span class="small">5 Br | 4 Ba</span>
+                                <p class="text-danger fw-bold mb-0">KES 75,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            </div>
+        </div>
     </section>
+
+    <script>
+        // Simple Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.property-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active', 'btn-danger'));
+                filterBtns.forEach(b => b.classList.add('btn-outline-danger'));
+                
+                btn.classList.add('active', 'btn-danger');
+                btn.classList.remove('btn-outline-danger');
+
+                const filter = btn.getAttribute('data-filter');
+
+                items.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+        <footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 class="footer-title">SUBSCRIBE</h4>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Your email address" class="footer-input">
+                    <button type="submit" class="btn-subscribe">Subscribe!</button>
+                </div>
+                
+                <div class="contact-info">
+                    <p><i class="fas fa-phone-alt"></i> +254(0)20 2279000</p>
+                    <p><i class="fas fa-phone-alt"></i> +254(0)20 2215900</p>
+                    <p><i class="fas fa-mobile-alt"></i> +254(0)722 481 504</p>
+                    <p><i class="fas fa-envelope"></i> info@brightwoods.co.ke</p>
+                </div>
+
+                <h4 class="footer-title social-title">SOCIAL</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-link fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link yt"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link in"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link ig"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">QUICK LINKS</h4>
+                <ul class="footer-links">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">COMPARE</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">EXPLORE</h4>
+                <ul class="footer-links red-links">
+                    <li><a href="#">PROPERTY FOR SALE</a></li>
+                    <li><a href="#">PROPERTY TO LET</a></li>
+                    <li><a href="#">FEATURED PROPERTIES</a></li>
+                    <li><a href="#">NEW ARRIVALS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Brightwoods Apartment 2026 All rights reserved | Designed and Maintained by <span class="designer">Revos</span></p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
