@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Properties | Brightwoods Apartment</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-        <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Brightwoods Apartments Company| Premium Real Estate</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-     <header class="main-header">
+    <header class="main-header">
         <div class="logo">
             <h1 class="brand-name">Brightwoods Apartments Company</h1>
         </div>
@@ -24,7 +20,7 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li class="dropdown">
-                    <a href="properties.html">Properties <i class="fa fa-chevron-down"></i></a>
+                   <a href="properties.html">Properties <i class="fa fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="properties.html?status=rent">For Rent</a></li>
                         <li><a href="properties.html?status=sale">For Sale</a></li>
@@ -32,10 +28,20 @@
                         <li><a href="properties.html?status=featured">Featured</a></li>
                         <li><a href="properties.html?status=luxury">Luxury</a></li>
                     </ul>
+                     <li class="dropdown">
+                    <a href="#">Property Type <i class="fa fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Apartments</a></li>
+                        <li><a href="#">Houses / Homes</a></li>
+                        <li><a href="#">Offices</a></li>
+                        <li><a href="#">Retail Spaces</a></li>
+                        <li><a href="#">Plots / Lands</a></li>
+                        <li><a href="#">Industrial Properties</a></li>
+                    </ul>
+                </li>
                 </li>
                 <li><a href="contact.html">Contact us</a></li>
                  <li><a href="about.html">About us</a></li>
-                <li><a href="contactContact us</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
@@ -47,7 +53,7 @@
         </div>
     </header>
 
-    <section class="properties-page-header py-5 bg-dark text-white text-center">
+<section class="properties-page-header py-5 bg-dark text-white text-center">
         <div class="container">
             <h1 class="fw-bold">All Properties</h1>
             <p>Home / Properties</p>
@@ -67,15 +73,30 @@
                 
                 <div class="col-md-4 property-item for-sale featured">
                     <div class="property-card h-100 shadow-sm border-0">
-                        <div class="img-wrapper" style="background-image: url('images/afford1.jpeg'); height: 250px; background-size: cover;">
-                            <span class="badge bg-danger m-3">FOR SALE</span>
+                        <div class="img-wrapper" style="background-image: url('images/afford8.jpeg'); height: 250px; background-size: cover; position: relative;">
+                            <span class="badge bg-warning text-dark m-3">FEATURED</span>
+                            <span class="badge bg-danger m-3" style="position: absolute; right: 0;">FOR SALE</span>
                         </div>
                         <div class="p-3">
-                            <h6 class="fw-bold">2 & 3 Affordable house in Kitengela</h6>
-                            <p class="small text-muted"><i class="fas fa-map-marker-alt"></i> Kitengela Town Center</p>
+                            <h6 class="fw-bold">Prime Plot – Central Park Estate, Muthaiga North</h6>
+                            <p class="small text-muted"><i class="fas fa-map-marker-alt"></i> Muthaiga North, Nairobi</p>
                             <div class="d-flex justify-content-between border-top pt-2 mt-2">
-                                <span class="small"><i class="fas fa-bed"></i> 3 Br</span>
-                                <span class="small"><i class="fas fa-shower"></i> 2 Ba</span>
+                                <span class="small">0.5 Acre</span>
+                                <p class="text-danger fw-bold mb-0">KES 55,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 property-item for-sale">
+                    <div class="property-card h-100 shadow-sm border-0">
+                        <div class="img-wrapper" style="background-image: url('images/afford7.jpeg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-secondary m-3">PRIME</span>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Kinanie Land For sale</h6>
+                            <p class="small text-muted mb-2">KINANIE PROPERTY-LUKENYA</p>
+                            <div class="d-flex justify-content-between border-top pt-2 mt-2">
                                 <p class="text-danger fw-bold mb-0">Price on call</p>
                             </div>
                         </div>
@@ -84,14 +105,30 @@
 
                 <div class="col-md-4 property-item for-sale featured">
                     <div class="property-card h-100 shadow-sm border-0">
-                        <div class="img-wrapper" style="background-image: url('images/hero_bg_2.jpeg'); height: 250px; background-size: cover;">
-                            <span class="badge bg-warning text-dark m-3">FEATURED</span>
+                        <div class="img-wrapper" style="background-image: url('images/apart4.jpeg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-dark m-3">LUXURY</span>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Modern Suburban Villa</h6>
+                            <p class="small text-muted mb-2">Karen, Nairobi</p>
+                            <div class="d-flex justify-content-between border-top pt-2 mt-2">
+                                <span class="small"><i class="fas fa-bed"></i> 5 Br</span>
+                                <p class="text-danger fw-bold mb-0">KES 75,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 property-item for-sale featured">
+                    <div class="property-card h-100 shadow-sm border-0">
+                        <div class="img-wrapper" style="background-image: url('images/land11.jpg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-info m-3">FEATURED</span>
                         </div>
                         <div class="p-3">
                             <h6 class="fw-bold">2 & 3 Muthangari Residency with DSQ</h6>
-                            <p class="small text-muted"><i class="fas fa-map-marker-alt"></i> Off Kanjata Rd, Nairobi</p>
+                            <p class="small text-muted mb-2">Off Kanjata Rd, Nairobi</p>
                             <div class="d-flex justify-content-between border-top pt-2 mt-2">
-                                <span class="small"><i class="fas fa-expand"></i> 1,940 SqFt</span>
+                                <span class="small">1,940 SqFt</span>
                                 <p class="text-danger fw-bold mb-0">Price on call</p>
                             </div>
                         </div>
@@ -100,15 +137,75 @@
 
                 <div class="col-md-4 property-item for-sale">
                     <div class="property-card h-100 shadow-sm border-0">
-                        <div class="img-wrapper" style="background-image: url('images/apart8.jpeg'); height: 250px; background-size: cover;">
+                        <div class="img-wrapper" style="background-image: url('images/land15.jpg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-success m-3">NEW</span>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Executive 3 Bedroom Apartments</h6>
+                            <p class="small text-muted mb-2">Kilimani, Woodley Estate</p>
+                            <div class="d-flex justify-content-between border-top pt-2 mt-2">
+                                <p class="text-danger fw-bold mb-0">KES 18,500,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 property-item for-sale">
+                    <div class="property-card h-100 shadow-sm border-0">
+                        <div class="img-wrapper" style="background-image: url('images/image_10.jpg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-dark m-3">URGENT</span>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">4 Bedroom Semi-Detached House</h6>
+                            <p class="small text-muted mb-2">Syokimau, Mombasa Road</p>
+                            <div class="d-flex justify-content-between border-top pt-2 mt-2">
+                                <p class="text-danger fw-bold mb-0">KES 12,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 property-item for-sale">
+                    <div class="property-card h-100 shadow-sm border-0">
+                        <div class="img-wrapper" style="background-image: url('images/apart17.jpeg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-warning text-dark m-3">PREMIUM</span>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">0.5 Acre Residential Plot</h6>
+                            <p class="small text-muted mb-2">Runda Evergreen, Nairobi</p>
+                            <div class="d-flex justify-content-between border-top pt-2 mt-2">
+                                <p class="text-danger fw-bold mb-0">KES 45,000,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 property-item for-sale">
+                    <div class="property-card h-100 shadow-sm border-0">
+                        <div class="img-wrapper" style="background-image: url('images/apart5.jpeg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-primary m-3">GOLF VIEW</span>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Thika Greens Golf Estate Plot</h6>
+                            <p class="small text-muted mb-2">Thika, Murang'a Road</p>
+                            <div class="d-flex justify-content-between border-top pt-2 mt-2">
+                                <p class="text-danger fw-bold mb-0">KES 6,500,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 property-item for-sale featured">
+                    <div class="property-card h-100 shadow-sm border-0">
+                        <div class="img-wrapper" style="background-image: url('images/afford1.jpeg'); height: 250px; background-size: cover;">
                             <span class="badge bg-danger m-3">FOR SALE</span>
                         </div>
                         <div class="p-3">
-                            <h6 class="fw-bold">Executive Apartments Westlands</h6>
-                            <p class="small text-muted"><i class="fas fa-map-marker-alt"></i> Tena Estate, Manyanja Rd</p>
+                            <h6 class="fw-bold">2 & 3 Affordable house in Kitengela</h6>
+                            <p class="small text-muted">Kitengela Town Center</p>
                             <div class="d-flex justify-content-between border-top pt-2 mt-2">
-                                <span class="small"><i class="fas fa-bed"></i> 2 Br</span>
-                                <p class="text-danger fw-bold mb-0">KES 22,000,000</p>
+                                <span class="small"><i class="fas fa-bed"></i> 3 Br</span>
+                                <p class="text-danger fw-bold mb-0">Price on call</p>
                             </div>
                         </div>
                     </div>
@@ -129,17 +226,31 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 property-item for-sale luxury">
+                <div class="col-md-4 property-item for-rent featured">
                     <div class="property-card h-100 shadow-sm border-0">
-                        <div class="img-wrapper" style="background-image: url('images/hero_bg_12.jpg'); height: 250px; background-size: cover;">
-                            <span class="badge bg-dark m-3">LUXURY</span>
+                        <div class="img-wrapper" style="background-image: url('images/apart12.jpg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-info m-3">CORPORATE</span>
                         </div>
                         <div class="p-3">
-                            <h6 class="fw-bold">Modern Suburban Villa</h6>
-                            <p class="small text-muted">Karen, Nairobi</p>
+                            <h6 class="fw-bold">Premium Office Space 2,000 Sqft</h6>
+                            <p class="small text-muted mb-2">Westlands, Waiyaki Way</p>
                             <div class="d-flex justify-content-between border-top pt-2 mt-2">
-                                <span class="small">5 Br | 4 Ba</span>
-                                <p class="text-danger fw-bold mb-0">KES 75,000,000</p>
+                                <p class="text-danger fw-bold mb-0">KES 150/Sqft</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 property-item for-sale">
+                    <div class="property-card h-100 shadow-sm border-0">
+                        <div class="img-wrapper" style="background-image: url('images/afford2.jpeg'); height: 250px; background-size: cover;">
+                            <span class="badge bg-secondary m-3">PRIME</span>
+                        </div>
+                        <div class="p-3">
+                            <h6 class="fw-bold">Harambee Sacco Plot</h6>
+                            <p class="small text-muted mb-2">Donholm, Nairobi</p>
+                            <div class="d-flex justify-content-between border-top pt-2 mt-2">
+                                <p class="text-danger fw-bold mb-0">Price on call</p>
                             </div>
                         </div>
                     </div>
@@ -148,34 +259,59 @@
             </div>
         </div>
     </section>
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const propertyItems = document.querySelectorAll('.property-item');
 
-    <script>
-        // Simple Filter Logic
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const items = document.querySelectorAll('.property-item');
+    // --- NEW: URL PARAMETER LOGIC ---
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterParam = urlParams.get('filter'); // Gets 'for-sale', 'for-rent', etc.
 
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterBtns.forEach(b => b.classList.remove('active', 'btn-danger'));
-                filterBtns.forEach(b => b.classList.add('btn-outline-danger'));
-                
+    function applyFilter(filterValue) {
+        // Update Button Visuals
+        filterButtons.forEach(btn => {
+            if(btn.getAttribute('data-filter') === filterValue) {
                 btn.classList.add('active', 'btn-danger');
                 btn.classList.remove('btn-outline-danger');
-
-                const filter = btn.getAttribute('data-filter');
-
-                items.forEach(item => {
-                    if (filter === 'all' || item.classList.contains(filter)) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
+            } else {
+                btn.classList.remove('active', 'btn-danger');
+                btn.classList.add('btn-outline-danger');
+            }
         });
-    </script>
-        <footer class="main-footer">
+
+        // Filter the Items
+        propertyItems.forEach(item => {
+            if (filterValue === 'all' || !filterValue) {
+                item.style.display = 'block';
+            } else if (item.classList.contains(filterValue)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+    // Run on page load if a parameter exists
+    if (filterParam) {
+        applyFilter(filterParam);
+    }
+
+    // --- EXISTING: CLICK LOGIC ---
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const val = this.getAttribute('data-filter');
+            applyFilter(val);
+            
+            // Optional: Update URL without reloading page
+            const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?filter=' + val;
+            window.history.pushState({path:newurl},'',newurl);
+        });
+    });
+});
+</script>
+
+  <footer class="main-footer">
     <div class="container">
         <div class="footer-grid">
             <div class="footer-col">
@@ -186,10 +322,10 @@
                 </div>
                 
                 <div class="contact-info">
-                    <p><i class="fas fa-phone-alt"></i> +254(0)20 2279000</p>
-                    <p><i class="fas fa-phone-alt"></i> +254(0)20 2215900</p>
-                    <p><i class="fas fa-mobile-alt"></i> +254(0)722 481 504</p>
-                    <p><i class="fas fa-envelope"></i> info@brightwoods.co.ke</p>
+                    <p><i class="fas fa-phone-alt"></i>  0722726651</p>
+                    <p><i class="fas fa-phone-alt"></i> 0728294033</p>
+                    <p><i class="fas fa-mobile-alt"></i> +254 792 558 727</p>
+                    <p><i class="fas fa-envelope"></i> info@brightwoodapartments.com</p>
                 </div>
 
                 <h4 class="footer-title social-title">SOCIAL</h4>
@@ -204,21 +340,22 @@
             <div class="footer-col">
                 <h4 class="footer-title">QUICK LINKS</h4>
                 <ul class="footer-links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">COMPARE</a></li>
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">PRIVACY POLICY</a></li>
+                  <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    
+                    
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h4 class="footer-title">EXPLORE</h4>
-                <ul class="footer-links red-links">
-                    <li><a href="#">PROPERTY FOR SALE</a></li>
-                    <li><a href="#">PROPERTY TO LET</a></li>
-                    <li><a href="#">FEATURED PROPERTIES</a></li>
-                    <li><a href="#">NEW ARRIVALS</a></li>
-                </ul>
+               <ul class="footer-links red-links">
+    <li><a href="properties.html?filter=for-sale">PROPERTY FOR SALE</a></li>
+    <li><a href="properties.html?filter=for-rent">PROPERTY TO LET</a></li>
+    <li><a href="properties.html?filter=featured">FEATURED PROPERTIES</a></li>
+    <li><a href="properties.html?filter=all">NEW ARRIVALS</a></li>
+</ul>
             </div>
         </div>
 
@@ -227,5 +364,80 @@
         </div>
     </div>
 </footer>
+    <script src="js/tiny-slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Main Hero Slider
+            var slider = tns({
+                container: '.hero-slider',
+                items: 1,
+                autoplay: true,
+                autoplayButtonOutput: false,
+                controls: true,
+                nav: false,
+                mouseDrag: true,
+                speed: 800
+            });
+
+            // Featured Carousel
+            tns({
+                container: '.featured-carousel',
+                items: 1,
+                gutter: 20,
+                responsive: { 768: { items: 3 }, 1024: { items: 4 } },
+                nav: true,
+                controls: false
+            });
+
+            // Partners Slider
+            tns({
+                container: '.partner-slider',
+                items: 3,
+                autoplay: true,
+                controls: false,
+                nav: false,
+                responsive: { 768: { items: 5 } }
+            });
+
+            // Dynamic Card Logic
+            const infoCard = document.getElementById('infoCard');
+            const updateCard = () => {
+                const info = slider.getInfo();
+                const activeSlide = info.container.querySelectorAll('.tns-slide-active')[0];
+                if (!activeSlide) return;
+
+                const title = activeSlide.getAttribute('data-title');
+                const loc = activeSlide.getAttribute('data-loc');
+                const specs = activeSlide.getAttribute('data-specs');
+                const price = activeSlide.getAttribute('data-price');
+                const tags = activeSlide.getAttribute('data-tags').split(',');
+
+                infoCard.style.opacity = '0';
+                infoCard.style.transform = 'translateY(-40%)';
+
+                setTimeout(() => {
+                    infoCard.querySelector('.card-title').innerText = title;
+                    infoCard.querySelector('.card-location').innerText = loc;
+                    infoCard.querySelector('.card-price').innerText = price;
+                    
+                    const specsArray = specs.split('|');
+                    infoCard.querySelector('.card-specs').innerHTML = 
+                        specsArray.map(s => `<span>${s.trim()}</span>`).join('');
+
+                    infoCard.querySelector('.card-tags').innerHTML = tags.map(t => {
+                        const trimmed = t.trim();
+                        const colorClass = (trimmed === 'FOR SALE' || trimmed === 'FEATURED') ? 'tag-red' : 'tag-orange';
+                        return `<span class="tag ${colorClass}">${trimmed}</span>`;
+                    }).join('');
+
+                    infoCard.style.opacity = '1';
+                    infoCard.style.transform = 'translateY(-50%)';
+                }, 300);
+            };
+
+            slider.events.on('indexChanged', updateCard);
+            updateCard();
+        });
+    </script>
 </body>
 </html>
