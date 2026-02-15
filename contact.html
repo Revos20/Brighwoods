@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brightwoods Apartments Company | Premium Real Estate</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* New Section Styles */
+        .contact-card-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            height: 100%;
+            text-align: center;
+        }
+        .contact-icon-circle {
+            color: #0d6efd;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .dept-label { font-size: 0.9rem; margin-right: 15px; cursor: pointer; }
+        .dept-label input { margin-right: 5px; }
+        
+        /* Map styling */
+        .map-section { padding: 60px 0; background-color: #f9f9f9; }
+        .address-text { font-size: 0.85rem; letter-spacing: 1px; color: #555; }
+    </style>
+</head>
+<body>
+
+       <header class="main-header">
+    <div class="logo">
+    <a href="index.html" class="logo-link text-decoration-none">
+        <img src="images/brightwood logo.jpg" alt="Logo" class="header-logo">
+        <h1 class="brand-name">Brightwoods Apartments Company</h1>
+    </a>
+</div>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="dropdown">
+               <a href="properties.html">Properties <i class="fa fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="properties.html?filter=for-rent">Houses and Homes (Rent)</a></li>
+                    <li><a href="properties.html?filter=for-sale">Prime Plots / Lands (Sale)</a></li>
+                    <li><a href="properties.html?filter=prime">Properties Near You</a></li>
+                    <li><a href="properties.html?filter=featured">Featured Listings</a></li>
+                    <li><a href="properties.html?filter=luxury">Newly Added</a></li>
+                    <li><a href="properties.html?filter=affordable">Affordable Houses</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="property-type.html">Property Type <i class="fa fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="apartments.html">Apartments</a></li>
+                    <li><a href="houses.html">Houses / Homes</a></li>
+                    <li><a href="land.html">Plots / Lands</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="about.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <p style="max-width: 700px; margin: 0 auto;">For more information about our services, get in touch with our expert consultants. We're always eager to hear from you!</p>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <form class="row g-4" id="contactForm">
+                    <div class="col-md-6">
+                        <input type="text" id="fname" class="form-control p-3 shadow-sm" placeholder="First Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="lname" class="form-control p-3 shadow-sm" placeholder="Last Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" id="email" class="form-control p-3 shadow-sm" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" id="phone" class="form-control p-3 shadow-sm" placeholder="Your Phone" required>
+                    </div>
+                    
+                    <div class="col-12">
+                        <p class="mb-2"><strong>How would you like us to reach out?</strong></p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <label class="dept-label"><input type="radio" name="contactMethod" value="email" checked> Email</label>
+                            <label class="dept-label"><input type="radio" name="contactMethod" value="whatsapp"> WhatsApp</label>
+                            <label class="dept-label"><input type="radio" name="contactMethod" value="phone"> Phone Call</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <p class="mb-2"><strong>Department:</strong></p>
+                        <div class="d-flex flex-wrap">
+                            <label class="dept-label"><input type="checkbox" name="dept" value="Agency"> Agency</label>
+                            <label class="dept-label"><input type="checkbox" name="dept" value="Management"> Management</label>
+                            <label class="dept-label"><input type="checkbox" name="dept" value="Valuation"> Valuation</label>
+                            <label class="dept-label"><input type="checkbox" name="dept" value="Consultancy"> Consultancy</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <textarea id="message" class="form-control p-3 shadow-sm" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary px-5 py-3" style="background-color: #0d6efd; border: none; font-weight: bold;">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pb-5">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="contact-card-box">
+                    <i class="fas fa-phone-alt contact-icon-circle"></i>
+                    <h4 class="text-primary">Contact:</h4>
+                    <p class="mb-1">Telephone: <strong>+254 792 558 727</strong></p>
+                    <p class="mb-1">Mobile: <strong>+254 0728294033, 0728294033</strong></p>
+                    <p>Email: <em>info@brightwoodapartments.com</em></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-card-box shadow">
+                    <i class="far fa-clock contact-icon-circle"></i>
+                    <h4 class="text-primary">Hours of Operation:</h4>
+                    <p class="mb-1">Monday- Friday: <strong>8:00am- 4:30pm</strong></p>
+                    <p>Saturday, Sunday & Holidays: <strong>Closed</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="map-section">
+        <div class="container text-center">
+            <h2 class="mb-3">Visit our office</h2>
+            <p class="address-text mb-4"><i class="fas fa-map-marker-alt text-primary"></i> Adams Arcade, Kirichwa Road, Nairobi.</p>
+            <div class="ratio ratio-21x9">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.791557005471!2d36.77823667434551!3d-1.3003352986872594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1b264fa4327b%3A0xa4a4fda6e6260dbe!2sAdams%20Arcade!5e0!3m2!1sen!2ske!4v1715600000000!5m2!1sen!2ske" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        </div>
+    </section>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 class="footer-title">SUBSCRIBE</h4>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Your email address" class="footer-input">
+                    <button type="submit" class="btn-subscribe">Subscribe!</button>
+                </div>
+                
+                <div class="contact-info">
+                    <p><i class="fas fa-phone-alt"></i> +254 117 334 647</p>
+                    <p><i class="fas fa-phone-alt"></i> +254 792 558 727</p>
+                    <p><i class="fas fa-phone-alt"></i> +254 728 294 033</p>
+                    <p><i class="fas fa-envelope"></i> brightwoodsagency@gmail.com</p>
+                    <p><i class="fas fa-globe"></i> wwww.brightwoodsapartments.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Adams Arcade, Kirichwa Road, Nairobi.</p>
+                    <p><i class="fas fa-box"></i> P.O. Box: 10495-00100</p>
+                </div>
+
+                <h4 class="footer-title social-title">SOCIAL</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-link fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link yt"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link in"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link ig"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">QUICK LINKS</h4>
+                <ul class="footer-links">
+                  <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    
+                    
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">EXPLORE</h4>
+               <ul class="footer-links red-links">
+    <li><a href="properties.html?filter=for-sale">PROPERTY FOR SALE</a></li>
+    <li><a href="properties.html?filter=for-rent">PROPERTY TO LET</a></li>
+    <li><a href="properties.html?filter=featured">FEATURED PROPERTIES</a></li>
+    <li><a href="properties.html?filter=all">NEW ARRIVALS</a></li>
+</ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Brightwoods Apartment 2026 All rights reserved | Designed and Maintained by <span class="designer">Revos</span></p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/tiny-slider.js"></script>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Collect values
+            const fname = document.getElementById('fname').value;
+            const lname = document.getElementById('lname').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            const method = document.querySelector('input[name="contactMethod"]:checked').value;
+            
+            // Collect checked departments
+            let depts = [];
+            document.querySelectorAll('input[name="dept"]:checked').forEach((checkbox) => {
+                depts.push(checkbox.value);
+            });
+            const deptString = depts.length > 0 ? depts.join(', ') : 'General';
+
+            const companyEmail = "info@brightwoodapartments.com";
+            const companyWhatsapp = "254792558727"; // Format: CountryCodePhoneNumber without '+'
+
+            const formattedMessage = `Inquiry from: ${fname} ${lname}%0A` +
+                                     `Email: ${email}%0A` +
+                                     `Phone: ${phone}%0A` +
+                                     `Department: ${deptString}%0A` +
+                                     `Message: ${message}`;
+
+            if (method === 'email') {
+                // Opens user's email client
+                window.location.href = `mailto:${companyEmail}?subject=Website Inquiry - ${deptString}&body=${formattedMessage}`;
+            } 
+            else if (method === 'whatsapp') {
+                // Opens WhatsApp with pre-filled text
+                window.open(`https://wa.me/${companyWhatsapp}?text=${formattedMessage}`, '_blank');
+            } 
+            else if (method === 'phone') {
+                // Triggers a phone call
+                window.location.href = `tel:+254792558727`;
+            }
+        });
+    </script>
+</body>
+</html>

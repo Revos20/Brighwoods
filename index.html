@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brightwoods Apartments Company| Premium Real Estate</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="logo">
+    <a href="index.html" class="logo-link text-decoration-none">
+        <img src="images/brightwood logo.jpg" alt="Logo" class="header-logo">
+        <h1 class="brand-name">Brightwoods Apartments Company</h1>
+    </a>
+</div>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="dropdown">
+               <a href="properties.html">Properties <i class="fa fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="properties.html?filter=for-rent">Houses and Homes (Rent)</a></li>
+                    <li><a href="properties.html?filter=for-sale">Prime Plots / Lands (Sale)</a></li>
+                    <li><a href="properties.html?filter=prime">Properties Near You</a></li>
+                    <li><a href="properties.html?filter=featured">Featured Listings</a></li>
+                    <li><a href="properties.html?filter=luxury">Newly Added</a></li>
+                    <li><a href="properties.html?filter=affordable">Affordable Houses</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+    <a href="property-type.html">Property Type <i class="fa fa-chevron-down"></i></a>
+    <ul class="dropdown-menu">
+        <li><a href="apartments.html">Apartments</a></li>
+        <li><a href="houses.html">Houses / Homes</a></li>
+       
+        <li><a href="land.html">Plots / Lands</a></li>
+    </ul>
+</li>
+            
+            <li><a href="about.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+    <section class="hero-section">
+    <div class="hero-slider">
+        <div class="hero-item" style="background-image: url('images/afford1.jpeg');"
+             data-title="2 &amp; 3 Affordable house in Kitengela"
+             data-loc="Kitengela Town Center, Nairobi"
+             data-specs="3 Br | 2 Ba | 1,940 SqFt"
+             data-price="Price on call"
+             data-tags="FOR SALE, FEATURED"
+             data-id="prop01">
+        </div>
+        <div class="hero-item" style="background-image: url('images/afford10.jpeg');"
+             data-title="2 &amp; 3 Affordable house in Kiambu Road"
+             data-loc="Off Kiambu Rd, Gated Community"
+             data-specs="3 Br | 2 Ba | 1,940 SqFt"
+             data-price="Price on call"
+             data-tags="FOR SALE, FEATURED"
+             data-id="prop02">
+        </div> 
+        <div class="hero-item" style="background-image: url('images/afford3.jpeg');"
+             data-title="2 &amp; 3 affordable house in Lukenya"
+             data-loc="Off Mombasa Rd-Lukenya"
+             data-specs="3 Br | 2 Ba | 2,940 SqFt"
+             data-price="Price on call"
+             data-tags="FOR SALE, FEATURED"
+             data-id="prop03">
+        </div> 
+        <div class="hero-item" style="background-image: url('images/afford4.jpeg');"
+             data-title="2 &amp; 3 Muthangari Residency with DSQ"
+             data-loc="Off Kanjata Rd-Nairobi Kenya"
+             data-specs="3 Br | 2 Ba | 1,940 SqFt"
+             data-price="Price on call"
+             data-tags="FOR SALE, FEATURED"
+             data-id="prop04">
+        </div> 
+        <div class="hero-item" style="background-image: url('images/afford10.jpeg');"
+             data-title="2 &amp; 3 Karen villas with DSQ"
+             data-loc="Off Karen Rd-Nairobi Kenya"
+             data-specs="3 Br | 2 Ba | 1,940 SqFt"
+             data-price="Price on call"
+             data-tags="FOR SALE, FEATURED"
+             data-id="prop05">
+        </div>
+        <div class="hero-item" style="background-image: url('images/afford1.jpeg');"
+             data-title="Executive Apartments Westlands"
+             data-loc="Westlands, Nairobi"
+             data-specs="2 Br | 2 Ba | 1,200 SqFt"
+             data-price="KES 22,000,000"
+             data-tags="FOR SALE"
+             data-id="prop06">
+        </div>
+        <div class="hero-item" style="background-image: url('images/afford7.jpeg');"
+             data-title="Prime Commercial Land"
+             data-loc="Kilimani, Nairobi"
+             data-specs="0.5 Acres | Fenced"
+             data-price="Price on call"
+             data-tags="FOR SALE, PRIME"
+             data-id="prop07">
+        </div>
+        <div class="hero-item" style="background-image: url('images/afford8.jpeg');"
+             data-title="Modern Suburban Villa"
+             data-loc="Karen, Nairobi"
+             data-specs="5 Br | 4 Ba | 4,000 SqFt"
+             data-price="KES 75,000,000"
+             data-tags="FOR SALE, LUXURY"
+             data-id="prop08">
+        </div>
+    </div>
+
+    
+</section>
+
+<section class="search-bar-red">
+    <div class="container">
+        <form id="searchForm" class="search-flex">
+            <div class="field-group">
+                <label>KEYWORD</label>
+                <input type="text" name="keyword" placeholder="Enter Keyword...">
+            </div>
+            <div class="field-group">
+                <label>STATUS</label>
+                <select name="filter">
+                    <option value="all">All Status</option>
+                    <option value="for-sale">For Sale</option>
+                    <option value="for-rent">For Rent</option>
+                </select>
+            </div>
+            <div class="field-group">
+                <label>TYPE</label>
+                <select name="type" id="typeSelect">
+                    <option value="properties.html">All Types</option>
+                    <option value="apartments.html">Apartment</option>
+                    <option value="houses.html">House</option>
+                    <option value="land.html">Land/Plot</option>
+                    <option value="offices.html">Office</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-search-main">Search</button>
+        </form>
+    </div>
+</section>
+
+<script>
+    document.getElementById('searchForm').addEventListener('submit', function(e) {
+        // 1. Prevent the default form submission
+        e.preventDefault();
+
+        // 2. Get the selected page URL from the "TYPE" dropdown
+        const typeSelect = document.getElementById('typeSelect');
+        const targetPage = typeSelect.value;
+
+        // 3. Get the other form data to carry it over as URL parameters
+        const formData = new FormData(this);
+        const params = new URLSearchParams(formData);
+
+        // 4. Redirect the user to "selected-page.html?keyword=...&filter=..."
+        window.location.href = targetPage + '?' + params.toString();
+    });
+</script>
+
+    <section class="welcome-section py-5 text-center">
+        <div class="container">
+            <h2>Welcome to Brightwoods</h2>
+            <p class="text-muted">Whether you’re buying, selling or renting, we can help you move forward.</p>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="action-card">
+                        <img src="images/Kezafrontareal.jpeg" alt="Buy" class="img-fluid rounded mb-3">
+                        <h5>Buy a new home</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="action-card">
+                        <img src="images/Kezarestground.jpeg" alt="Sell" class="img-fluid rounded mb-3">
+                        <h5>Sell a home</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="action-card">
+                        <img src="images/afford6.jpeg" alt="Rent" class="img-fluid rounded mb-3">
+                        <h5>Rent a home</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+  <section class="property-grid-section">
+    <div class="container">
+        <h2 class="section-title">Houses / Homes</h2>
+        <div class="properties-sale-grid">
+            
+           
+            <a href="property-single.html?id=tasia-1" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/tasia2.jpg');"></div><div class="p-3"><h3 class="price-text">75,000,000</h3><p class="text-muted">2.	Tasia 1 .Outering rd fedha 1/4 acres  </p><span class="btn-read-more">Details</span></div></div></a>
+            <a href="property-single.html?id=keza-riruta" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/Keza1.jpeg');"></div><div class="p-3"><h3 class="price-text">Contact us for more</h3><p class="text-muted">Keza Riruta Urban Oasis</p><span class="btn-read-more">Details</span></div></div></a>
+            <a href="property-single.html?id=mukuru" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/mukuru.jpeg');"></div><div class="p-3"><h3 class="price-text">KES 640,000 - 1,280,000</h3><p class="text-muted">Mukuru Affordable Housing Project</p><span class="btn-read-more">Details</span></div></div></a>
+            <a href="property-single.html?id=shauri-moyo-small" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/ShauriMoyo.jpeg');"></div><div class="p-3"><h3 class="price-text">KES 1,200,000 - 1,500,000</h3><p class="text-muted">Shauri Moyo Affordable Housing (Phase A)</p><span class="btn-read-more">Details</span></div></div></a>
+            
+
+        </div>
+    </div>
+</section>
+<section class="property-grid-section py-5">
+    <div class="container">
+        <h2 class="section-title">Affordable Housing Projects</h2>
+        <div class="properties-sale-grid">
+            
+            <a href="property-single.html?id=mukuru" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/afford1.jpeg');"></div><div class="p-3"><h3 class="price-text">From KES 640,000</h3><p class="text-muted">Mukuru (South B) - Bedsitter, 1 & 2 Bedroom Units</p><span class="btn-read-more">Details</span></div></div></a>
+            
+            
+            
+            <a href="property-single.html?id=shauri-moyo-small" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/ShauriMoyo.jpeg');"></div><div class="p-3"><h3 class="price-text">KES 1,200,000 - 1,500,000</h3><p class="text-muted">Shauri Moyo Affordable Housing (Phase A)</p><span class="btn-read-more">Details</span></div></div></a>
+            
+            <a href="property-single.html?id=shauri-moyo-large" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/shaurimoyo2.jpg');"></div><div class="p-3"><h3 class="price-text">KES 2,000,000 - 2,700,000</h3><p class="text-muted">Shauri Moyo (Phase B) - 2 & 3 Bedroom Units</p><span class="btn-read-more">Details</span></div></div></a>
+            
+            <a href="property-single.html?id=machakos-high" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/afford6.jpeg');"></div><div class="p-3"><h3 class="price-text">KES 3,600,000</h3><p class="text-muted">Machakos Town - Executive 3 Bedroom Units</p><span class="btn-read-more">Details</span></div></div></a>
+            
+            <a href="property-single.html?id=machakos-low" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/afford5.jpeg');"></div><div class="p-3"><h3 class="price-text">KES 2,400,000 - 3,000,000</h3><p class="text-muted">Machakos Town - 1 & 2 Bedroom Apartments</p><span class="btn-read-more">Details</span></div></div></a>
+
+        </div>
+    </div>
+</section>
+
+<section class="property-grid-section py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title mb-4">Featured Listings</h2>
+        <div class="properties-sale-grid">
+            <a href="property-single.html?id=tena-estate" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/tena1.jpg');"></div><div class="p-3"><h3 class="price-text">KES 22,000,000</h3><p class="text-muted">Tena Estate - Manyanja rd, Nairobi (6+ Images)</p><span class="btn-read-more">Details</span></div></div></a>
+            <a href="property-single.html?id=gratewall-apts" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/gratewall1.jpg');"></div><div class="p-3"><h3 class="price-text">Price on Call</h3><p class="text-muted">Gratewall Apartments - 9 Units + Shops</p><span class="btn-read-more">Details</span></div></div></a>
+            <a href="property-single.html?id=keza-riruta" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/Keza1.jpeg');"></div><div class="p-3"><h3 class="price-text">Price on Call</h3><p class="text-muted">Keza Riruta Urban Oasis - Pool & Gym</p><span class="btn-read-more">Details</span></div></div></a>
+        </div>
+    </div>
+</section>
+<section class="property-grid-section py-5">
+    <div class="container">
+        <h2 class="section-title mb-4">Prime Plots & Lands</h2>
+        <div class="properties-sale-grid">
+            <a href="property-single.html?id=land01" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/Kiko1.jpg');"></div><div class="p-3"><h3 class="price-text">KES 5,000,000</h3><p class="text-muted">Kikopey Prime Plot - 50 x 100 ft</p><span class="btn-read-more">Details</span></div></div></a>
+            <a href="property-single.html?id=land04" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/Luq1.jpg');"></div><div class="p-3"><h3 class="price-text">KES 7.5M / Acre</h3><p class="text-muted">Maanzoni (Behind Looqman) - 5 Acres 2nd Row</p><span class="btn-read-more">Details</span></div></div></a>
+            <a href="property-single.html?id=land06" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/Upper1.jpg');"></div><div class="p-3"><h3 class="price-text">KES 310,000,000</h3><p class="text-muted">Upperhill, Mbagathi Road - Commercial near KNH</p><span class="btn-read-more">Details</span></div></div></a>
+        </div>
+    </div>
+</section>
+<div class="new-properties-carousel">
+    <div class="container">
+        <h2 class="section-title mb-4">Newly Added Properties</h2>
+        <div class="carousel-controls" id="new-prop-controls">
+            <button class="btn btn-outline-secondary" id="new-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="btn btn-outline-secondary" id="new-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="new-properties-carousel owl-carousel">
+            <div class="item">
+                <a href="property-single.html?id=tena-estate" class="property-card-link">
+                    <div class="property-card"><div class="img-wrapper" style="background-image: url('images/tena1.jpg'); height: 220px;"></div><div class="p-3"><h4 class="fw-bold mb-1">KES 22,000,000</h4><p class="text-muted">Tena Estate - Manyanja rd</p><span class="btn btn-primary w-100 fw-bold">Details</span></div></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="property-single.html?id=tasia-1" class="property-card-link">
+                    <div class="property-card"><div class="img-wrapper" style="background-image: url('images/tasia1.jpg'); height: 220px;"></div><div class="p-3"><h4 class="fw-bold mb-1">KES 75,000,000</h4><p class="text-muted">Tasia 1 - 1/4 Acre Outering rd</p><span class="btn btn-primary w-100 fw-bold">Details</span></div></div>
+                </a>
+            </div>
+            <div class="item">
+                  <a href="property-single.html?id=gratewall-apts" class="property-card-link"><div class="property-card"><div class="img-wrapper" style="background-image: url('images/gratewall1.jpg');"></div><div class="p-3"><h3 class="price-text">Price on Call</h3><p class="text-muted">Gratewall Apartments - 9 Units + Shops</p><span class="btn-read-more">Details</span></div></div></a>
+            </div>
+            <div class="item">
+                <a href="property-single.html?id=land06" class="property-card-link">
+                    <div class="property-card"><div class="img-wrapper" style="background-image: url('images/Upper1.jpg'); height: 220px;"></div><div class="p-3"><h4 class="fw-bold mb-1">KES 310,000,000</h4><p class="text-muted">Upperhill Land - Mbagathi Rd</p><span class="btn btn-primary w-100 fw-bold">Details</span></div></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="property-single.html?id=land07" class="property-card-link">
+                    <div class="property-card"><div class="img-wrapper" style="background-image: url('images/indus1.jpg'); height: 220px;"></div><div class="p-3"><h4 class="fw-bold mb-1">KES 80,000,000</h4><p class="text-muted">Industrial Area Plot - 1 Hectare</p><span class="btn btn-primary w-100 fw-bold">Details</span></div></div>
+                </a>
+            </div>
+        </div>
+<section class="py-5 bg-white">
+    <div class="container">
+        <h3 class="fw-bold mb-4">Properties near you</h3>
+        
+        <div class="row g-3">
+            <div class="col-md-5">
+                <div class="location-card tall" style="position: relative; overflow: hidden;">
+                    <video autoplay muted loop playsinline class="background-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+                        <source src="images/kezavid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <div class="location-overlay" style="position: relative; z-index: 1;">
+                        <h5 class="fw-bold mb-0">Keza Urban Oasis</h5>
+                        <p class="small mb-0">14 Properties</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="location-card small-box" style="background-image: url('images/tasia2.jpg');">
+                            <div class="location-overlay">
+                                <h6 class="fw-bold mb-0">Tasia</h6>
+                                <p class="small mb-0">6 Properties</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="location-card small-box" style="background-image: url('images/afford5.jpeg');">
+                            <div class="location-overlay">
+                                <h6 class="fw-bold mb-0">Mkuru kwa Njenga</h6>
+                                <p class="small mb-0">1 Properties</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="location-card small-box" style="background-image: url('images/tena6.jpg');">
+                            <div class="location-overlay">
+                                <h6 class="fw-bold mb-0">Tena Estate</h6>
+                                <p class="small mb-0">1 Properties</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="location-card small-box" style="background-image: url('images/gratewall1.jpg');">
+                            <div class="location-overlay">
+                                <h6 class="fw-bold mb-0">Gratewall Apartments</h6>
+                                <p class="small mb-0">4 Properties</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="testimonials-section">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>Why Do People Love Working With Us?</h2>
+            <p>Whether you’re buying, selling or renting, we can help you move forward.</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h4 class="user-name">Peter Kamau</h4>
+                <p class="user-role">Client Nairobi</p>
+                <p class="user-feedback">
+                    I enjoyed dealing with this company when I was looking for furnished property to rent in Nairobi. 
+                    They were very responsive and offered options where they are closely involved in the property management. A good team.
+                </p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h4 class="user-name">James Njoroge</h4>
+                <p class="user-role">Karen Nairobi</p>
+                <p class="user-feedback">
+                    If you wanna buy a house 🏠🏙️🏡 I'd suggest you visit this people. 
+                    It's an old company and very legit. Unlike ukuze and gakuye shiet!! Ask for rosemary, nice lady 👌👌
+                </p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4 class="user-name">Mercy Njery</h4>
+                <p class="user-role">Client Kisumu</p> 
+                <p class="user-feedback">
+                    Professional property management services
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="news-articles-section">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2>Featured Property Highlights</h2>
+            <p>Explore our exclusive hand-picked properties and investment opportunities</p>
+        </div>
+
+        <div class="articles-grid">
+            <article class="article-card">
+                <div class="article-image" style="background-image: url('images/tena1.jpg');">
+                    <div class="article-tag" style="position: absolute; top: 10px; left: 10px; background: #dc3545; color: white; padding: 2px 10px; border-radius: 4px; font-size: 0.8rem;">Featured</div>
+                </div>
+                <div class="article-body">
+                    <h3 class="article-title">Tena Estate - Prime Investment</h3>
+                    <div class="article-meta">
+                        <i class="fa fa-map-marker-alt"></i> Manyanja rd, Nairobi | <i class="far fa-folder"></i> KES 22,000,000
+                    </div>
+                    <p class="article-excerpt">A premium residential opportunity located in the heart of Tena Estate. Perfect for development with high rental yield potential.</p>
+                    <a href="property-single.html?id=tena-estate" class="btn-read-more">View Property Details</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="article-image" style="background-image: url('images/tasia1.jpg');">
+                    <div class="article-tag" style="position: absolute; top: 10px; left: 10px; background: #198754; color: white; padding: 2px 10px; border-radius: 4px; font-size: 0.8rem;">For Sale</div>
+                </div>
+                <div class="article-body">
+                    <h3 class="article-title">Tasia 1 - 1/4 Acre Commercial</h3>
+                    <div class="article-meta">
+                        <i class="fa fa-map-marker-alt"></i> Outering rd fedha | <i class="far fa-folder"></i> KES 75,000,000
+                    </div>
+                    <p class="article-excerpt">Strategic 1/4 acre plot ideal for commercial use, situated along the busy Outering Road corridor near Fedha.</p>
+                    <a href="property-single.html?id=tasia-1" class="btn-read-more">View Property Details</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="article-image" style="background-image: url('images/gratewall1.jpg');">
+                    <div class="article-tag" style="position: absolute; top: 10px; left: 10px; background: #0d6efd; color: white; padding: 2px 10px; border-radius: 4px; font-size: 0.8rem;">Luxury & Retail</div>
+                </div>
+                <div class="article-body">
+                    <h3 class="article-title">Mixed-Use & Urban Oasis Projects</h3>
+                    <div class="article-meta">
+                        <i class="fa fa-building"></i> Utawala & Riruta | <i class="far fa-folder"></i> Market Update
+                    </div>
+                    <p class="article-excerpt">Discover the Gratewall Apartments with 10 integrated shops and the Keza Riruta Urban Oasis featuring gym and pool amenities.</p>
+                    <a href="properties.html" class="btn-read-more">Explore All Projects</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+   
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 class="footer-title">SUBSCRIBE</h4>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Your email address" class="footer-input">
+                    <button type="submit" class="btn-subscribe">Subscribe!</button>
+                </div>
+                
+                <div class="contact-info">
+                    <p><i class="fas fa-phone-alt"></i> +254 117 334 647</p>
+                    <p><i class="fas fa-phone-alt"></i> +254 792 558 727</p>
+                    <p><i class="fas fa-phone-alt"></i> +254 728 294 033</p>
+                    <p><i class="fas fa-envelope"></i> brightwoodsagency@gmail.com</p>
+                    <p><i class="fas fa-globe"></i> wwww.brightwoodsapartments.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Adams Arcade, Kirichwa Road, Nairobi.</p>
+                    <p><i class="fas fa-box"></i> P.O. Box: 10495-00100</p>
+                </div>
+
+                <h4 class="footer-title social-title">SOCIAL</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-link fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link yt"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link in"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link ig"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">QUICK LINKS</h4>
+                <ul class="footer-links">
+                  <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    
+                    
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">EXPLORE</h4>
+                <ul class="footer-links red-links">
+                    <li><a href="properties.html?filter=for-sale">PROPERTY FOR SALE</a></li>
+                    <li><a href="properties.html?filter=for-rent">PROPERTY TO LET</a></li>
+                    <li><a href="properties.html?filter=featured">FEATURED PROPERTIES</a></li>
+                    <li><a href="properties.html?filter=all">NEW ARRIVALS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Brightwoods Apartments Company. All rights reserved | Designed and Maintained by <span class="designer">Revos</span></p>
+        </div>
+    </div>
+</footer>
+<script src="js/property-data.js"></script>
+<script src="js/tiny-slider.js"></script>
+<script>
+    var heroSlider = tns({
+        container: '.hero-slider',
+        items: 1,
+        slideBy: 'page',
+        autoplay: true,
+        autoplayButtonOutput: false,
+        controls: false,
+        nav: true,
+        navPosition: "bottom",
+        mouseDrag: true,
+        speed: 1000
+    });
+</script>
+</body>
+</html>
