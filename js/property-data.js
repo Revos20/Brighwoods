@@ -45,7 +45,7 @@ const propertyDatabase = {
         price: "KES 2,400,000 - 3,000,000",
         specs: "1 Bedroom | 2 Bedroom",
         tags: "FOR SALE,PRIME",
-        images: "images/afford5.jpeg,images/afford7.jpeg,images/machakos.jpeg,images/machakos1.jpeg,images/machakos2.jpeg",
+        images: "images/machakos1.jpeg,images/afford7.jpeg,images/machakos.jpeg,images/machakos1.jpeg,images/machakos2.jpeg",
         desc: "Located near Machakos Teachers’ College.",
         mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15953.122607412533!2d37.263738!3d-1.519401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f09459f0f673d%3A0x296c663f9f3b9e!2sMachakos!5e0!3m2!1sen!2ske!4v1700000000016"
     },
@@ -55,7 +55,7 @@ const propertyDatabase = {
         price: "KES 3,600,000",
         specs: "3 Bedroom | Executive Finish",
         tags: "FOR SALE,PRIME",
-        images: "images/machakos.jpeg,images/apart5.jpeg,images/afford7.jpeg",
+        images: "images/machakos.jpeg,images/machakos3.jpeg,images/afford7.jpeg",
         desc: "Executive 3-bedroom units for KES 3,600,000.",
         mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15953.122607412533!2d37.263738!3d-1.519401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f09459f0f673d%3A0x296c663f9f3b9e!2sMachakos!5e0!3m2!1sen!2ske!4v1700000000016"
     },
@@ -107,7 +107,7 @@ const propertyDatabase = {
         tags: "FOR SALE",
         images: "images/Enka1.1.jpg",
         desc: "A quarter-acre residential plot in the serene Enkasiti area, perfect for immediate development.",
-        mapUrl: ""
+        mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.218608827702!2d36.937319!3d-1.433512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f73752697a829%3A0x7d6a5c2d385f096d!2sEnkasiti%2C%20Kenya!5e0!3m2!1sen!2ske!4v1700000000021"
     },
     "land03": {
         title: "Enkasiti 2 Next to Residential",
@@ -117,7 +117,7 @@ const propertyDatabase = {
         tags: "FOR SALE",
         images: "images/Enka2.1.jpg",
         desc: "Strategic quarter-acre plot located right next to established residential homes in Enkasiti.",
-        mapUrl: ""
+        mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.218608827702!2d36.937319!3d-1.433512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f73752697a829%3A0x7d6a5c2d385f096d!2sEnkasiti%2C%20Kenya!5e0!3m2!1sen!2ske!4v1700000000021"
     },
     "land04": {
         title: "Maanzoni Land (Behind Looqman)",
@@ -127,7 +127,7 @@ const propertyDatabase = {
         tags: "FOR SALE",
         images: "images/Luq1.jpg",
         desc: "Massive 5-acre block in Maanzoni, located on the second row behind Looqman. Ideal for sub-division or ranching.",
-        mapUrl: ""
+        mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15953.642813575302!2d37.067426!3d-1.513233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f099684346e27%3A0x296c663f9f3b9e!2sMaanzoni%2C%20Kenya!5e0!3m2!1sen!2ske!4v1700000000022"
     },
     "land05": {
         title: "Maanzoni Wildlife Estate",
@@ -137,7 +137,7 @@ const propertyDatabase = {
         tags: "WILDLIFE ESTATE",
         images: "images/Wild1.jpg",
         desc: "Exclusive land within the Maanzoni Wildlife area. 2.5 acres of pristine environment on the 5th row.",
-        mapUrl: ""
+        mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15953.642813575302!2d37.067426!3d-1.513233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f099684346e27%3A0x296c663f9f3b9e!2sMaanzoni%2C%20Kenya!5e0!3m2!1sen!2ske!4v1700000000022"
     },
     "land06": {
         title: "Upperhill Commercial Land",
@@ -147,7 +147,7 @@ const propertyDatabase = {
         tags: "PRIME INVESTMENT",
         images: "images/Upper1.jpg",
         desc: "High-value commercial land in Upperhill near Kenyatta National Hospital, ideal for large-scale development.",
-        mapUrl: ""
+        mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.24773899479!2d36.784400!3d-1.288921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f109be3f2a893%3A0x6331a9829281a67!2sUpper%20Hill%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1700000000023"
     },
     "land07": {
         title: "Industrial Area Hectare",
@@ -157,7 +157,6 @@ const propertyDatabase = {
         tags: "INDUSTRIAL",
         images: "images/indus1.jpg",
         desc: "Strategically located 1-hectare land in Industrial Area near the Inland Container Depot (ICD). Perfect for godowns or logistics.",
-        mapUrl: ""
-        },
+        mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.218608827702!2d36.837319!3d-1.333512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f111053629e4b%3A0x9560f64c63747f4b!2sIndustrial%20Area%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1700000000024"
+    },
 };
-
