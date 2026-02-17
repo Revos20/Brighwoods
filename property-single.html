@@ -1,0 +1,275 @@
+<!-- /*
+* Template Name: Property
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>
+      Property Details | Brightwoods Apartments
+    </title>
+  </head>
+  <body>
+     <header class="main-header">
+    <div class="logo">
+    <a href="index.html" class="logo-link text-decoration-none">
+        <img src="images/brightwood logo.jpg" alt="Logo" class="header-logo">
+        <h1 class="brand-name">Brightwoods Apartments Company</h1>
+    </a>
+</div>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="dropdown">
+               <a href="properties.html">Properties <i class="fa fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="properties.html?filter=for-rent">Houses and Homes (Rent)</a></li>
+                    <li><a href="properties.html?filter=for-sale">Prime Plots / Lands (Sale)</a></li>
+                    <li><a href="properties.html?filter=prime">Properties Near You</a></li>
+                    <li><a href="properties.html?filter=featured">Featured Listings</a></li>
+                    <li><a href="properties.html?filter=luxury">Newly Added</a></li>
+                    <li><a href="properties.html?filter=affordable">Affordable Houses</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="property-type.html">Property Type <i class="fa fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="apartments.html">Apartments</a></li>
+                    <li><a href="houses.html">Houses / Homes</a></li>
+                    <li><a href="land.html">Plots / Lands</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="about.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+<div class="hero page-inner overlay" id="property-hero-slider">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-9 text-center mt-5">
+                <h1 class="heading" data-aos="fade-up" id="property-main-title">Loading...</h1>
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                    <ol class="breadcrumb text-center justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="properties.html">Properties</a></li>
+                        <li class="breadcrumb-item active text-white-50" id="property-breadcrumb-title">...</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-7">
+                <div class="img-property-slide-wrap">
+                    <div class="property-main-slider" id="main-slider-container">
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <h2 class="heading text-primary mb-3" id="property-title-sidebar">...</h2>
+                <p class="meta text-muted mb-4" id="property-location-sidebar">...</p>
+                <p class="text-black-50 mb-4" id="property-description">...</p>
+
+                <div class="specs-container mb-4">
+                    <h3 class="h5 fw-bold">Features</h3>
+                    <ul class="list-unstyled" id="property-features-list">
+                        </ul>
+                </div>
+
+                <h3 class="text-primary fw-bold mb-4" id="property-price">...</h3>
+
+                <div class="d-grid gap-2">
+                    <a href="#" id="inquire-whatsapp-btn" class="btn btn-success py-3 fw-bold">
+                        <i class="fab fa-whatsapp me-2"></i> Inquire on WhatsApp
+                    </a>
+                    <a href="#" id="inquire-email-btn" class="btn btn-primary py-3 fw-bold">
+                        <i class="far fa-envelope me-2"></i> Inquire via Email
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 pt-5 border-top">
+            <div class="col-12">
+                <h3 class="h4 mb-4">Property Location</h3>
+                <div class="ratio ratio-21x9 rounded shadow-sm overflow-hidden">
+                    <iframe id="property-map-iframe" src="" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- /.site-footer -->
+    <footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 class="footer-title">SUBSCRIBE</h4>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Your email address" class="footer-input">
+                    <button type="submit" class="btn-subscribe">Subscribe!</button>
+                </div>
+                
+                <div class="contact-info">
+                    <p><i class="fas fa-phone-alt"></i> +254 117 334 647</p>
+                    <p><i class="fas fa-phone-alt"></i> +254 792 558 727</p>
+                    <p><i class="fas fa-phone-alt"></i> +254 728 294 033</p>
+                    <p><i class="fas fa-envelope"></i> brightwoodsagency@gmail.com</p>
+                    <p><i class="fas fa-globe"></i> wwww.brightwoodsapartments.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Adams Arcade, Kirichwa Road, Nairobi.</p>
+                    <p><i class="fas fa-box"></i> P.O. Box: 10495-00100</p>
+                </div>
+
+                <h4 class="footer-title social-title">SOCIAL</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-link fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link yt"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link in"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link ig"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">QUICK LINKS</h4>
+                <ul class="footer-links">
+                  <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    
+                    
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">EXPLORE</h4>
+                <ul class="footer-links red-links">
+                    <li><a href="properties.html?filter=for-sale">PROPERTY FOR SALE</a></li>
+                    <li><a href="properties.html?filter=for-rent">PROPERTY TO LET</a></li>
+                    <li><a href="properties.html?filter=featured">FEATURED PROPERTIES</a></li>
+                    <li><a href="properties.html?filter=all">NEW ARRIVALS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Brightwoods Apartment 2026 All rights reserved | Designed and Maintained by <span class="designer">Revos</span></p>
+        </div>
+    </div>
+    </footer>
+
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    
+    <!-- Property Data and Page Logic -->
+    <script src="js/property-data.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    const propId = params.get('id');
+    const property = propertyDatabase[propId];
+
+    if (property) {
+        const imageArray = property.images.split(',');
+
+        // 1. Populate Text & Map
+        let heroImage = imageArray[0];
+        if (heroImage.endsWith('.mp4')) {
+            const firstImage = imageArray.find(img => !img.endsWith('.mp4'));
+            if (firstImage) heroImage = firstImage;
+        }
+        document.getElementById('property-hero-slider').style.backgroundImage = `url('${heroImage}')`;
+        document.getElementById('property-main-title').textContent = property.title;
+        document.getElementById('property-breadcrumb-title').textContent = property.loc;
+        document.getElementById('property-title-sidebar').textContent = property.title;
+        document.getElementById('property-location-sidebar').textContent = property.loc;
+        document.getElementById('property-description').textContent = property.desc;
+        document.getElementById('property-price').textContent = property.price;
+        document.getElementById('property-map-iframe').src = property.mapUrl;
+
+        // 2. Populate Features
+        const featuresList = document.getElementById('property-features-list');
+        property.specs.split('|').forEach(spec => {
+            if(spec.trim()) {
+                const li = document.createElement('li');
+                li.textContent = spec.trim();
+                featuresList.appendChild(li);
+            }
+        });
+
+        // 3. Inject Slider Media (Cleaned up)
+        const mainContainer = document.getElementById('main-slider-container');
+
+        imageArray.forEach(src => {
+            // Main Slide only
+            const slide = document.createElement('div');
+            if(src.endsWith('.mp4')) {
+                slide.innerHTML = `<video src="${src}" autoplay muted loop playsinline style="width:100%; height:400px; object-fit:cover;"></video>`;
+            } else {
+                slide.innerHTML = `<img src="${src}" alt="property" style="width:100%; height:400px; object-fit:cover;">`;
+            }
+            mainContainer.appendChild(slide);
+            
+            // Thumbnail logic is removed here
+        });
+
+        // 4. Initialize Slider with Controls
+        var slider = tns({
+            container: '#main-slider-container',
+            items: 1,
+            slideBy: 'page',
+            autoplay: true,
+            autoplayButtonOutput: false,
+            controls: true,           // Enables Prev/Next buttons
+            controlsText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+            nav: true,                // Enables small dots at the bottom
+            mouseDrag: true,
+            speed: 1000,
+            autoplayTimeout: 5000 
+        });
+
+        // 5. Inquiry Links
+        const msg = encodeURIComponent(`I'm interested in ${property.title}. Link: ${window.location.href}`);
+        document.getElementById('inquire-whatsapp-btn').href = `https://wa.me/254117334647?text=${msg}`;
+        document.getElementById('inquire-email-btn').href = `mailto:brightwoodsagency@gmail.com?subject=Inquiry&body=${msg}`;
+
+    }
+});
+    </script>
+  </body>
+</html>
